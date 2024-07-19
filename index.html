@@ -1,74 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>NFT-Website</title> <!-- ALWAYS CHECK THE TITLE TO BE RE-NAMED TO THE CURRENT PROJECT-->
+<title>NFT - Main Page</title> <!-- ALWAYS CHECK THE TITLE TO BE RE-NAMED TO THE CURRENT PROJECT-->
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/reset.css" type="text/css">
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     <meta name="description" content="Worlds new NFT Project">
     <meta name="keywords" content="nft, nft products, newyork nft, best prices nft">
     <meta name="author" content="Vladislav Ginatulin">
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="./favicon.ico">
     <!--TODO: CHECK AGAIN ALL THE WEB PAGE, TO FIND ANY ERRORS-->
     <style>
         #logo1 {
-            background-color: black;
-        }
-        #logo {
-            background-color: black;
+            background-color: transparent;
         }
     </style>
 </head>
 <body>
 <!-- HEAD INFORMATION-->
 <header>
-    <div>
+    <div class="head_container">
     <nav> <!-- MENU NAVIGATION-->
         <a href="/index.html"><img id="logo1" src="/images/icons/Logo.svg" alt="Main Logo" title="Website Logotype"></a>
         <ul>
            <li><a href="/index.html" aria-current="page">Home</a></li>
-           <li><a href="/gallery.html">Gallery</a></li>
+           <li><a href="/gallery.html" target="_blank">Gallery</a></li>
            <li><a href="#">All NFTs</a></li>
            <li><a href="#">Activitiess</a></li>
-           <li><a href="#"><img src="/images/icons/Iconbutton.png" alt="dots"></a></li>
+           <li><a href="#"><img src="/images/icons/dots.svg" alt="dots"></a></li>
            <li><a href="#"><img src="/images/icons/search.svg" alt="Search button"></a></li>
         </ul>
+           <!-- BUTTON CONNECT WALLET-->
+    <button type="submit" id="wallet">Connect wallet</button> 
     </nav>
-    </div>
-    <div>
-<!-- BUTTON CONNECT WALLET-->
-    <button type="submit" onclick="alert('Wallet isn&prime;t available right now!')">Connect wallet</button> 
+<!-- END OF NAVIGATION -->
+    <div class="header_leftcol"><!-- HEADER INFO LEFT COLUMN-->
         <h1>Discover, collect, and <br>
         sell extraordinary NFTs</h1>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, asperiores. Quasi minus placeat ea possimus eius saepe nobis eveniet ab vitae quo tempore nisi fuga debitis, error ducimus consectetur incidunt?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt magni sint delectus quisquam voluptatibus expedita rerum nostrum. Adipisci quo fugit qui quisquam nam aliquid blanditiis voluptatum, eos optio. Maiores, sequi.
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do<br> amet sint. Velit officia consequat duis enim velit mollit. Exercitation<br> veniam consequat sunt nostrud amet.
         </p>
-        <a href="#">Explore now</a>
+        <button type="button" id="explore">Explore now<img src="/images/icons/arrow-right.svg"></button>
     </div>
-    <div>
+    <div class="header_rightcol">
         <a href="#"><img src="/images/icons/Illuimg.svg" alt="Illum Image" title="Illum Image"></a>
     </div>
+</div>
 </header>
 <!-- MAIN INFORMATION-->
      <main>
-        <div>
-            <!-- GIT COMMANDS/ TERMINAL COMMANDS -->
-             <p>git add . - означает что все файлы готовы для пуша на гит</p>
-             <p>git add (имя файла) - означает что конкретный файл готов для пуша на гит</p>
-             <p>git status - проверяем статус файлов</p>
-             <p>git commit -m "комментарий" - коммитим файлы</p>
-             <p>git push - пушим файлы на гит</p>
-             <p>git pull - тянем файлы с гита( если были обновления другими разработчиками)</p>
-             <p>git clone - клонируем репозиторий</p>
-             <p>git branch - показывает все ветки</p>
-             <p>git checkout (имя ветки) - переключаемся на ветку</p>
-        </div>
         <section> 
 <!-- DROP DOWN SELECTION LIST-->
-            <article>
+            <article class="section1_info">
                 <h2>Hot Auctions</h2>
                 <form action="/index.html">
                     <label for="crypto"></label>
@@ -106,7 +96,7 @@
                     <figcaption>Artist name</figcaption>
                 </figure>
                 <figure> <!-- LIKES COUNT AND LIKES MINI-LOGO -->
-                    <img src="/images/row1_cards/heart_like.png" alt="Likes Count Icon">
+                    <img src="/images/row1_cards/heart_like.svg" alt="Likes Count Icon">
                     <figcaption>12121</figcaption>
                 </figure>
             </article>
@@ -131,7 +121,7 @@
                     <figcaption>Artist name</figcaption>
                 </figure>
                 <figure> <!-- LIKES COUNT AND LIKES MINI-LOGO -->
-                    <img src="/images/row1_cards/heart_like.png" alt="Likes Count Icon">
+                    <img src="/images/row1_cards/heart_like.svg" alt="Likes Count Icon">
                     <figcaption>12121</figcaption>
                 </figure>
             </article>
@@ -156,7 +146,7 @@
                     <figcaption>Artist name</figcaption>
                 </figure>
                 <figure> <!-- LIKES COUNT AND LIKES MINI-LOGO -->
-                    <img src="/images/row1_cards/heart_like.png" alt="Likes Count Icon">
+                    <img src="/images/row1_cards/heart_like.svg" alt="Likes Count Icon">
                     <figcaption>12121</figcaption>
                 </figure>
             </article>
@@ -180,7 +170,7 @@
                     <figcaption>Artist name</figcaption>
                 </figure>
                 <figure> <!-- LIKES COUNT AND LIKES MINI-LOGO -->
-                    <img src="/images/row1_cards/heart_like.png" alt="Likes Count Icon">
+                    <img src="/images/row1_cards/heart_like.svg" alt="Likes Count Icon">
                     <figcaption>12121</figcaption>
                 </figure>
             </article>
