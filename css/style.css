@@ -45,6 +45,7 @@ header h1 {
     font-size: 40px;
     line-height: 48px;
     color: aliceblue;
+    padding-top: 100px;
 }
 
 header p {
@@ -55,22 +56,55 @@ header p {
     margin-top: 20px;
 }
 header nav a {
-    color: aliceblue;
     text-decoration: none;
+    size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #BDCADB;
+    display: flex;
 }
 
-header nav li {
-    padding: 24px 0px 24px  0px;
+header nav ul li:nth-child(1) a {
+    color: white;
 }
+
+
+
+.head_container nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    
+}
+
+
+.head_container ul  {
+    display: flex;
+    flex-direction: row;
+    align-items: end;  
+    padding-left: 200px;
+}
+
+.head_container ul li {
+    padding-left: 48px;
+    display: flex;    size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+
+
+
 
 header nav a:hover {
-    color: rgba(255, 255, 255, 0.681);
+    color: rgb(255, 255, 255);
 }
 header #wallet {
     width: 170px;
     height: 44px;
     border-radius: 12px;
-    padding: 10px, 24px, 10px, 24px;
     background: transparent;
     color: aliceblue;
     border: 1px solid white;
@@ -96,26 +130,25 @@ header #explore {
     display: flex;
     justify-content: space-between ;
     align-items: center;
+    transition: background-color 0.3s, transform 0.1s;
 }
 
-/* Basic button styles */
-#explore {
+/* #explore {
     font-size: 16px;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.1s;
-
-}
+    
+} */
 #explore img {
     border: 1px solid white;
     border-radius: 12px;
     background: white;
     align-items: center;
     padding: 8px;
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
 }
 
 .header_leftcol button img{
@@ -221,3 +254,14 @@ header #explore {
     transform: scale(0.95);
     border: solid 1px #6692cc86;;
 }
+
+/* FOOTER INFORMATION */
+.media ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.media ul li {
+    padding: 16px;
+}
+
