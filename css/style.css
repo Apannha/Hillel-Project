@@ -2,32 +2,44 @@
 /*  THIS IS HEADER INFORMATION CONTAINER */
 * {
     font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    width: 1440px ;
-}
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+
 main {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
 }
+
 footer {
-    font-family: "Poppins", sans-serif;
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
+    font-family: "Poppins", sans-serif;
 }
+
 header {
     background: #21204A; 
-    font-family: "Poppins", sans-serif;
+    background-image: url('/images/Noise.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 61px;
+    font-family: "Poppins", sans-serif;
 }
+/*  THIS IS HEADER INFORMATION CONTAINER */
 .head_container {
     width: 1200px;
     margin: auto;
 }
 
 header h1 {
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 40px;
@@ -36,7 +48,6 @@ header h1 {
 }
 
 header p {
-    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
@@ -46,8 +57,8 @@ header p {
 header nav a {
     color: aliceblue;
     text-decoration: none;
-
 }
+
 header nav li {
     padding: 24px 0px 24px  0px;
 }
@@ -71,17 +82,20 @@ header #explore {
     border-radius: 12px;
     background: rgb(249,6,249);
     background: linear-gradient(42deg, rgba(249,6,249,1) 0%, rgba(6,152,249,1) 100%);
+    padding: 4px 4px 4px 24px;
     
     color: aliceblue;
     border: 0px transparent;
 
-    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
     color: #FFFFFF;
     cursor: pointer;
     margin-top: 48px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
 }
 
 /* Basic button styles */
@@ -92,12 +106,18 @@ header #explore {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.1s;
+
 }
 #explore img {
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 12px;
     background: white;
+    align-items: center;
+    padding: 8px;
+    width: 24px;
+    height: 24px;
 }
+
 .header_leftcol button img{
     width: 40px;
 }
@@ -147,18 +167,57 @@ header #explore {
 /*  THIS IS THE END OF HEADER INFORMATION CONTAINER */ /*------------------------------------------------------------------*/
 
 /* THIS IS THE START OF MAIN CONTAINER INFORMATION */
-
+.section1_info {
+    margin-bottom: 40px
+}
 .section1_info h2 {
     gap: 10px;
-    font-family: "Poppins", sans-serif;
-
-
+    color: #21204A;
     font-weight: 600;
     font-style: normal;
     font-size: 32px;
     line-height: 48px;
-    background: linear-gradient(90deg, #12C2E9 0%, #c471ed 50%, #f64f59 100%);
+    background: linear-gradient(98deg,#F906F9 0%, #0698F9 10%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
 
+.section1_info #crypto {
+    width: 146px;
+    height: 44px;
+    border-radius: 12px;
+    padding: 10px 16px 10px 24px;
+    gap: 10px;
+    background: #CDE2FE;
+    border: 0px solid ;
+    font-weight: 500;
+    color: #476285;
+}
+.section1_info #crypto:active {
+    border: solid 0px;
+
+}
+.section1_info #crypto:focus {
+    outline: none;
+}
+
+.section1_info #see_all {
+    width: 101px;
+    height: 44px;
+    border-radius: 12px;
+    border: 2px;
+    padding: 10px 24px 10px 24px;
+    gap: 10px;
+    color: #6692CC;
+    border: 2px solid;
+    font-weight: 500;
+    size: 16px;
+    line-height: 25px;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.1s;
+}
+.section1_info #see_all:active {
+    transform: scale(0.95);
+    border: solid 1px #6692cc86;;
 }
