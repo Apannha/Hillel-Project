@@ -1,15 +1,25 @@
-
-/*  THIS IS HEADER INFORMATION CONTAINER */
-* {
-    font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.clearfix {
+    clear: both;
 }
-
+.text-center {
+    text-align: center;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: auto;
+}
 body {
     max-width: 1440px;
     margin: 0 auto;
+    background-color: #eef1ff;
   }
 
 
@@ -35,8 +45,10 @@ header {
 }
 /*  THIS IS HEADER INFORMATION CONTAINER */
 .head_container {
-    width: 1200px;
+    width: 100%;
+    max-width: 1320px;
     margin: auto;
+
 }
 
 header h1 {
@@ -68,39 +80,10 @@ header nav ul li:nth-child(1) a {
     color: white;
 }
 
-
-
-.head_container nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 20px;
-    
-}
-
-
-.head_container ul  {
-    display: flex;
-    flex-direction: row;
-    align-items: end;  
-    padding-left: 200px;
-}
-
-.head_container ul li {
-    padding-left: 48px;
-    display: flex;    size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-}
-
-
-
-
-
 header nav a:hover {
     color: rgb(255, 255, 255);
 }
+
 header #wallet {
     width: 170px;
     height: 44px;
@@ -133,14 +116,6 @@ header #explore {
     transition: background-color 0.3s, transform 0.1s;
 }
 
-/* #explore {
-    font-size: 16px;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    
-} */
 #explore img {
     border: 1px solid white;
     border-radius: 12px;
@@ -253,15 +228,5 @@ header #explore {
 .section1_info #see_all:active {
     transform: scale(0.95);
     border: solid 1px #6692cc86;;
-}
-
-/* FOOTER INFORMATION */
-.media ul {
-    display: flex;
-    flex-direction: row;
-}
-
-.media ul li {
-    padding: 16px;
 }
 
