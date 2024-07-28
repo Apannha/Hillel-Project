@@ -1,232 +1,480 @@
+/* *  {
+  outline: 1px solid green !important;
+  box-sizing: border-box;
+}  */
+
+
 .clearfix {
-    clear: both;
+  clear: both;
 }
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 .fl {
-    float: left;
+  float: left;
 }
 .fr {
-    float: right;
+  float: right;
+}
+.head-banner {
+
+  margin: auto;
+  background-color: #21204A;
+  background-image: url(/images/Noise.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; /* Add this line */
+  background-attachment: fixed;
+  width: 100%;
+  height: 540px;
 }
 .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-main {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    overflow: auto;
-}
+    overflow: hidden;
+    clear: both;
+    font-family: "Poppins", sans-serif;
+    padding-top: 62px;
+  }
+  
+
 body {
-    max-width: 1440px;
-    margin: 0 auto;
+   
     background-color: #eef1ff;
+    overflow-x: hidden;
+  }
+  
+  .header {
+    padding: 24px 0px;
+    overflow: auto;
+  }
+
+  .header-logo img {
+    padding-top: 10px;
+  }
+  .header-menu {
+    margin-left: 232px;
+    overflow: hidden;
+  }
+  .header-menu ul {
+    overflow: hidden;
+  }
+  .header-menu li {
+    float: left;
+    padding: 20px;
   }
 
 
-main {
-    max-width: 1200px;
-    margin: auto;
-}
-
-footer {
-    max-width: 1200px;
-    margin: auto;
-    font-family: "Poppins", sans-serif;
-}
-
-header {
-    background: #21204A; 
-    background-image: url('/images/Noise.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 61px;
-    font-family: "Poppins", sans-serif;
-}
-/*  THIS IS HEADER INFORMATION CONTAINER */
-.head_container {
-    width: 100%;
-    max-width: 1320px;
-    margin: auto;
-
-}
-
-header h1 {
-    font-weight: 700;
-    font-style: normal;
-    font-size: 40px;
-    line-height: 48px;
-    color: aliceblue;
-    padding-top: 100px;
-}
-
-header p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    color: #BDCADB;
-    margin-top: 20px;
-}
-header nav a {
+  .header-menu li:nth-child(6){
+    padding-left: 0px;
+  }
+  
+  .header-menu li a {
     text-decoration: none;
-    size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #BDCADB;
-    display: flex;
-}
-
-header nav ul li:nth-child(1) a {
     color: white;
-}
-
-header nav a:hover {
-    color: rgb(255, 255, 255);
-}
-
-header #wallet {
-    width: 170px;
-    height: 44px;
-    border-radius: 12px;
-    background: transparent;
-    color: aliceblue;
-    border: 1px solid white;
-}
-
-header #explore {
-    width: 192px;
-    height: 48px;
-    border-radius: 12px;
-    background: rgb(249,6,249);
-    background: linear-gradient(42deg, rgba(249,6,249,1) 0%, rgba(6,152,249,1) 100%);
-    padding: 4px 4px 4px 24px;
-    
-    color: aliceblue;
-    border: 0px transparent;
-
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #FFFFFF;
-    cursor: pointer;
-    margin-top: 48px;
-    display: flex;
-    justify-content: space-between ;
-    align-items: center;
-    transition: background-color 0.3s, transform 0.1s;
-}
-
-#explore img {
-    border: 1px solid white;
-    border-radius: 12px;
-    background: white;
-    align-items: center;
-    padding: 8px;
-    width: 40px;
-    height: 40px;
-}
-
-.header_leftcol button img{
-    width: 40px;
-}
-
-/* Hover state */
-
-
-/* Active state (when button is pressed) */
-#explore:active {
-    transform: scale(0.95);
-    background: rgba(249, 6, 249, 0.719);
-    background: linear-gradient(42deg, rgba(249, 6, 249, 0.775) 0%, rgba(6, 152, 249, 0.752) 100%);
-}
-
-/* Focus state (when button is focused, e.g., via keyboard) */
-#explore:focus {
-    outline: none; /* Remove default outline */ 
-}
-/*  THIS IS THE END OF HEADER INFORMATION CONTAINER */
-
-/* Basic button styles */
-#wallet {
-    padding: 10px 20px;
+    /* styleName: Body 1/semibold; */
+    font-family: Poppins;
     font-size: 16px;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.1s;
-}
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    padding: 20px 15px;
+    border-bottom: 1px solid transparent;
 
-/* Hover state */
+  }
 
-
-/* Active state (when button is pressed) */
-#wallet:active {
-    transform: scale(0.95);
-    border: solid 1px rgba(249, 6, 249, 0.719);
-    /* background: rgba(249, 6, 249, 0.719);
-    background: linear-gradient(42deg, rgba(249, 6, 249, 0.775) 0%, rgba(6, 152, 249, 0.752) 100%); */
-}
-
-/* Focus state (when button is focused, e.g., via keyboard) */
-#wallet:focus {
-    outline: none; /* Remove default outline */ 
-}
-/*  THIS IS THE END OF HEADER INFORMATION CONTAINER */ /*------------------------------------------------------------------*/
-
-/* THIS IS THE START OF MAIN CONTAINER INFORMATION */
-.section1_info {
-    margin-bottom: 40px
-}
-.section1_info h2 {
-    gap: 10px;
-    color: #21204A;
+  .header-menu li:first-child a {
+    font-family: Poppins;
+    font-size: 16px;
     font-weight: 600;
-    font-style: normal;
-    font-size: 32px;
-    line-height: 48px;
-    background: linear-gradient(98deg,#F906F9 0%, #0698F9 10%);
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .header-menu li a:hover {
+    border-bottom: 1px solid  rgba(125, 3, 99, 0.464);
+
+  }
+  .header-button {
+    padding: 10px 24px 10px 24px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #BDCADB;
+    border-radius: 12px;
+    overflow: hidden;
+    align-items: center;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+
+  .header-button {
+    color: #BDCADB;
+  }
+  
+  .header-button:active {
+    transform: scale(0.95);
+    transition: background-color 0.3s, transform 0.1s;
+    border-radius: 12px;
+  }
+  
+  .header-button:active {
+    border: 2px solid rgb(125, 3, 99);
+  }
+  
+  .head-info {
+    overflow: auto;
+  }
+
+.header-rightcol {
+  width: 655px;
+  height: 592px;
+  overflow: hidden;
+}
+  
+.header_-eftcol {
+  overflow: hidden;
+
+}
+
+.header-leftcol h1 {
+  color: white;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding-top: 76px;
+}
+
+.header-leftcol p {
+  color: #BDCADB;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  padding-top: 20px;
+  padding-bottom: 48px;
+
+}
+
+.explore-btn {
+  border-radius: 12px;
+  border: none;
+  padding: 4px 4px 4px 24px;
+  width: 192px;
+  height: 48px;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: auto;
+  text-align: center;
+
+  background: #F906F9;
+  background: linear-gradient(to right, #F906F9 0%, #0698F9 64%);
+  overflow: auto;
+  cursor: pointer;
+}
+
+
+.explore-btn:active {
+  transform: scale(0.95);
+  transition: background-color 0.3s, transform 0.10s;
+  background: #F906F9;
+  background: linear-gradient(to right, #f906f976 0%, #0698f96e 64%);
+  overflow: auto;
+}
+
+
+.exp-btn-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: white;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+}
+.exp-btn-box:active {
+  background-color: transparent;
+}
+.exp-btn-img {
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+
+.exp-text {
+  padding-top: 8px;
+}
+
+
+main {
+  clear: both;
+  overflow: hidden;
+}
+
+
+a {
+  transition: background-color 0.3s; /* Add a transition effect to background-color */
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+a:focus {
+  
+  background-color: #eb05051d; /* Change the background color on focus */
+  transition: background-color 0.3s; /* Add a transition effect to background-color */
+}
+
+a:hover {
+  background-color: #cccccc07; /* Change the background color on hover */
+}
+
+.section1_info {
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 32px;
+}
+
+/*FIRST BLOCK CARD GROUP*/
+.cards-container {
+  overflow: hidden;
+}
+
+.block1-menu {
+  overflow: hidden;
+  clear: both;
+}
+.hot-actions {
+  overflow: hidden;
+  clear: both;
+}
+.left-info {
+  overflow: hidden;
+}
+
+.left-info h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #F906F9,#0698F9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.section1_info #crypto {
-    width: 146px;
-    height: 44px;
+.drop-list-btn {
+  padding-left: 26px;
+}
+select {
+  width: 146px;
+  height: 44px;
+  padding: 10px 16px 10px 24px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  outline: none;
+  border: none;
+}
+select:hover {
+
+  background: #F906F9;
+  background:  #d6e7ff;
+  overflow: auto;
+  color: #03387e;
+  background-image: url('/images/icons/arrow-up.svg');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px; /* Размер вашей пользовательской стрелки */
+  text-align: center;
+
+}
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 0px solid #CDE2FE;
     border-radius: 12px;
-    padding: 10px 16px 10px 24px;
-    gap: 10px;
-    background: #CDE2FE;
-    border: 0px solid ;
-    font-weight: 500;
+    background-color: #CDE2FE;
     color: #476285;
-}
-.section1_info #crypto:active {
-    border: solid 0px;
-
-}
-.section1_info #crypto:focus {
-    outline: none;
-}
-
-.section1_info #see_all {
-    width: 101px;
-    height: 44px;
-    border-radius: 12px;
-    border: 2px;
-    padding: 10px 24px 10px 24px;
+    background-image: url('/images/icons/select-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px; /* Размер вашей пользовательской стрелки */
+    text-align: center;
     gap: 10px;
-    color: #6692CC;
-    border: 2px solid;
-    font-weight: 500;
-    size: 16px;
-    line-height: 25px;
-    align-items: center;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.1s;
-}
-.section1_info #see_all:active {
-    transform: scale(0.95);
-    border: solid 1px #6692cc86;;
+    margin: auto;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
+select::-ms-expand {
+  display: none;
+}
+
+.left-info form {
+  border-radius: 12px;
+  padding-top: 2px;
+}
+
+.card-bid-title {
+  padding-top: 16px;
+}
+.card-bid1 {
+  width: 252px;
+  height: 468px;
+  border-radius: 16px;
+  padding: 16px;
+  background-color: white;
+  overflow: hidden;
+  margin: 0px 21px 0px 0px;
+}
+.card-bid1:last-child{
+  margin: 0;
+}
+.hot-title {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #21204A;
+}
+.hot-text {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #9D9BB9;
+}
+
+.hot-subtitle1 p  {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #9D9BB9;
+}
+
+.hot-subtitle2 p {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #9D9BB9;
+}
+
+.hot-subtitle1 h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #21204A;
+}
+.hot-subtitle2 h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #21204A;
+}
+
+.hot-middle-card {
+  overflow: hidden;
+  padding-top: 12px;
+  padding-bottom: 7px;
+}
+.hot-bottom-card {
+  overflow: hidden;
+
+}
+.hot-bottom-card figcaption{
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  align-items: center;
+  color: rgba(157, 155, 185, 1);
+}
+.hot-bottom-card figure {
+  overflow: hidden;
+}
+
+
+.hot-artist-name {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #9D9BB9;
+}
+
+hr {
+  width: 250px;
+      background: linear-gradient(to right, rgba(255, 126, 95, 0), rgba(6, 152, 249, 1), rgba(249, 6, 249, 1), rgba(255, 126, 95, 0)); 
+  border: 0;
+  height: 1px;
+}
+
+.sort-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 10px 24px 10px 24px;
+  font-size: 16px;
+  border: 2px solid rgba(102, 146, 204, 1);
+  border-radius: 12px;
+  background-color: transparent;
+  color: rgba(102, 146, 204, 1);
+  text-align: center;
+  gap: 10px;
+  margin: auto;
+  margin-top: 2px;
+}
+.sort-btn a {
+  text-decoration: none;
+  color: rgba(102, 146, 204, 1);
+}
+.sort-btn1 {
+  padding-left: 8px;
+}
+.sort-btn1 a {
+  text-align: center;
+  border-radius: 0px;
+
+}
+.sort-btn1 a{
+ display:-moz-inline-box;
+  display:inline-block;
+  min-width:34px;
+}
+.sort-btn1 img {
+  width: 44px;
+  height: 44px;
+  float: right;
+}
