@@ -7,17 +7,20 @@
 .clearfix {
   clear: both;
 }
+
 .text-center {
   text-align: center;
 }
+
 .fl {
   float: left;
 }
+
 .fr {
   float: right;
 }
-.head-banner {
 
+.head-banner {
   margin: auto;
   background-color: #21204A;
   background-image: url(/images/Noise.png);
@@ -28,11 +31,12 @@
   width: 100%;
   height: 540px;
 }
+
 .container {
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  overflow: auto;
+
   font-family: "Poppins", sans-serif;
 }
 
@@ -46,12 +50,11 @@
     padding-top: 62px;
   }
   
-
 body {
-   
     background-color: #eef1ff;
     overflow-x: hidden;
   }
+  /* HEAD INFORMATION BLOCK*/
   
   .header {
     padding: 24px 0px;
@@ -61,27 +64,29 @@ body {
   .header-logo img {
     padding-top: 10px;
   }
+
   .header-menu {
     margin-left: 232px;
     overflow: hidden;
   }
+
   .header-menu ul {
     overflow: hidden;
   }
+
   .header-menu li {
     float: left;
     padding: 20px;
   }
 
-
   .header-menu li:nth-child(6){
     padding-left: 0px;
   }
-  
+ 
+
   .header-menu li a {
     text-decoration: none;
     color: white;
-    /* styleName: Body 1/semibold; */
     font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
@@ -89,7 +94,6 @@ body {
     text-align: center;
     padding: 20px 15px;
     border-bottom: 1px solid transparent;
-
   }
 
   .header-menu li:first-child a {
@@ -100,10 +104,19 @@ body {
     text-align: center;
   }
 
-  .header-menu li a:hover {
-    border-bottom: 1px solid  rgba(125, 3, 99, 0.464);
+  a {
+    transition: background-color 0.3s; 
+    border: none;
+    outline: none;
 
   }
+
+  .header-menu li:hover {
+    transform: scale(0.90);
+ 
+    transition: transform 0.3s;
+  }
+
   .header-button {
     padding: 10px 24px 10px 24px;
     margin-top: 10px;
@@ -119,21 +132,21 @@ body {
     line-height: 24px;
   }
 
-
   .header-button {
     color: #BDCADB;
   }
   
   .header-button:active {
     transform: scale(0.95);
-    transition: background-color 0.3s, transform 0.1s;
+    transition: background-color 0.50s, transform 0.10s;
     border-radius: 12px;
-  }
-  
-  .header-button:active {
     border: 2px solid rgb(125, 3, 99);
+    color: rgb(125, 3, 99);
   }
   
+  /* END OF HEAD INFORMATION BLOCK */
+
+      /*HEAD INFO RIGHT BLOCK AND LEFT BLOCK - HEADER , TEXT - AND IMAGE*/
   .head-info {
     overflow: auto;
   }
@@ -144,7 +157,7 @@ body {
   overflow: hidden;
 }
   
-.header_-eftcol {
+.header_leftcol {
   overflow: hidden;
 
 }
@@ -192,7 +205,6 @@ body {
   cursor: pointer;
 }
 
-
 .explore-btn:active {
   transform: scale(0.95);
   transition: background-color 0.3s, transform 0.10s;
@@ -200,7 +212,6 @@ body {
   background: linear-gradient(to right, #f906f976 0%, #0698f96e 64%);
   overflow: auto;
 }
-
 
 .exp-btn-box {
   width: 40px;
@@ -212,9 +223,11 @@ body {
   margin: 0 auto;
   align-items: center;
 }
+
 .exp-btn-box:active {
   background-color: transparent;
 }
+
 .exp-btn-img {
   width: 24px;
   height: 24px;
@@ -227,28 +240,9 @@ body {
   padding-top: 8px;
 }
 
-
 main {
   clear: both;
   overflow: hidden;
-}
-
-
-a {
-  transition: background-color 0.3s; /* Add a transition effect to background-color */
-  border: none;
-  outline: none;
-  border-radius: 10px;
-}
-
-a:focus {
-  
-  background-color: #eb05051d; /* Change the background color on focus */
-  transition: background-color 0.3s; /* Add a transition effect to background-color */
-}
-
-a:hover {
-  background-color: #cccccc07; /* Change the background color on hover */
 }
 
 .section1_info {
@@ -256,10 +250,14 @@ a:hover {
   overflow: hidden;
   padding-bottom: 32px;
 }
+/*END OF EDITING HEADER BLOCK */
 
 /*FIRST BLOCK CARD GROUP*/
 .cards-container {
   overflow: hidden;
+}
+.popular-collections {
+  width: 1200px;
 }
 
 .block1-menu {
@@ -285,8 +283,9 @@ a:hover {
 }
 
 .drop-list-btn {
-  padding-left: 26px;
+  padding: 0px 16px 0px 26px;
 }
+
 select {
   width: 146px;
   height: 44px;
@@ -298,8 +297,8 @@ select {
   outline: none;
   border: none;
 }
-select:hover {
 
+select:hover {
   background: #F906F9;
   background:  #d6e7ff;
   overflow: auto;
@@ -311,11 +310,12 @@ select:hover {
   text-align: center;
 
 }
+
 select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    padding: 10px;
+    padding:10px 35px 10px 24px;
     font-size: 16px;
     border: 0px solid #CDE2FE;
     border-radius: 12px;
@@ -345,6 +345,7 @@ select::-ms-expand {
 .card-bid-title {
   padding-top: 16px;
 }
+
 .card-bid1 {
   width: 252px;
   height: 468px;
@@ -354,9 +355,14 @@ select::-ms-expand {
   overflow: hidden;
   margin: 0px 21px 0px 0px;
 }
+.card-bid1:hover {
+  transform: scale(0.96);
+  transition: 0.2s ease;
+}
 .card-bid1:last-child{
   margin: 0;
 }
+
 .hot-title {
   font-size: 18px;
   line-height: 24px;
@@ -364,6 +370,7 @@ select::-ms-expand {
   font-weight: 600;
   color: #21204A;
 }
+
 .hot-text {
   font-size: 12px;
   line-height: 16px;
@@ -395,6 +402,7 @@ select::-ms-expand {
   font-weight: 600;
   color: #21204A;
 }
+
 .hot-subtitle2 h3 {
   font-size: 16px;
   line-height: 24px;
@@ -408,8 +416,10 @@ select::-ms-expand {
   padding-top: 12px;
   padding-bottom: 7px;
 }
+
 .hot-bottom-card {
   overflow: hidden;
+  clear: both;
 
 }
 .hot-bottom-card figcaption{
@@ -421,10 +431,10 @@ select::-ms-expand {
   align-items: center;
   color: rgba(157, 155, 185, 1);
 }
+
 .hot-bottom-card figure {
   overflow: hidden;
 }
-
 
 .hot-artist-name {
   font-size: 12px;
@@ -441,6 +451,7 @@ hr {
   height: 1px;
 }
 
+
 .sort-btn {
   appearance: none;
   -webkit-appearance: none;
@@ -455,26 +466,250 @@ hr {
   gap: 10px;
   margin: auto;
   margin-top: 2px;
+  box-sizing: border-box;
 }
+
+.sort-btn:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+  transition: calc(0.3s);
+}
+
+
+
 .sort-btn a {
   text-decoration: none;
+  box-sizing: border-box;
   color: rgba(102, 146, 204, 1);
+
 }
+
 .sort-btn1 {
   padding-left: 8px;
 }
+
 .sort-btn1 a {
   text-align: center;
   border-radius: 0px;
-
 }
+
 .sort-btn1 a{
  display:-moz-inline-box;
   display:inline-block;
   min-width:34px;
 }
+
 .sort-btn1 img {
   width: 44px;
   height: 44px;
   float: right;
 }
+
+.sort-btn1 img:hover {
+  transform: scale(0.95);
+  transition: calc(0.3s);
+
+}
+
+
+/*END OF BLOCK 1 CARDS GROUP*/
+
+ /* POPULAR COLLECTIONS CONTAINER */
+.popular-collections {
+  margin-top: 132px;
+}
+ .popular-coll-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: rgba(33, 32, 74, 1);
+ }
+
+ .select-data {
+  width: 285px;
+  height: 44px;
+  border-radius: 12px;
+  background-color: rgba(205, 226, 254, 1);
+  font-size: 16px;
+  outline: none;
+  border: none;
+ }
+
+ .select-data a {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: rgba(110, 132, 171, 1);
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+ }
+.select-data-links {
+  clear: both;
+  margin: auto;
+}
+.select-data-links ul {
+  margin: auto;
+}
+ .select-data-links li {
+  display: inline-block;
+  overflow: hidden;
+ }
+ .select-data-links ul{
+  padding: 6px;
+ }
+
+ .select-data-links  li a{
+  padding:4px 8px 4px 8px ;
+ }
+ 
+
+ /* .select-data-links ul li:first-of-type{
+  width: 67px;
+  height: 32px;
+  background-color: white;
+  border: 0px solid transparent;
+  border-radius: 12px;
+ }
+  */
+  .select-data-links ul li:hover {
+    width: auto;
+    height: 32px;
+    background-color: white;
+    border: 0px solid transparent;
+    border-radius: 12px;
+    transition: calc(0.1s);
+  
+  }
+  .select-data-links ul li:active {
+    width: auto;
+    height: 32px;
+    background-color: white;
+    border: 0px solid transparent;
+    border-radius: 12px;
+    opacity: 0.5;
+
+ 
+  }
+
+ .select-data-links li:first-child a {
+  color: rgba(71, 98, 133, 1);
+  font-weight: 500;
+ }
+
+.sort-btn1:hover img{
+  cursor: pointer;
+}
+/*END OF POPULAR COLLECTIONS BLOCK MENU EDITING*/
+  /*CARD SLOTS FOR POPULAR COLLECTIONS  */ 
+.card-collection {
+  overflow: hidden;
+  padding-top: 32px;
+}
+
+.cards-container2 {
+  width: 384px;
+  height: 255px;
+  gap: 12px;
+  border-radius: 12px;
+  opacity: 0px;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-right: 24px;
+}
+.cards-container2:last-child{
+  margin: 0;
+}
+.cards-position {
+  overflow: hidden;
+}
+
+
+.cards-position .card-coll-img1 {
+  padding: 16px 0px 12px 15px;
+}
+.cards-position .card-coll-img1:hover {
+  transform: scale(0.97);
+  transition: 0.2s;
+}
+.cards-position .card-coll-img2 {
+  padding: 15px 8px 8px 8px;
+}
+.cards-position .card-coll-img2:hover {
+  transform: scale(0.97);
+  transition: 0.2s;
+}
+.cards-position .card-coll-img3 {
+  padding: 0px 8px 12px 8px ;
+}
+.cards-position .card-coll-img3:hover {
+  transform: scale(0.96);
+  transition: 0.2s;
+}
+.cards-position .card-coll-img4:hover {
+  transform: scale(0.96);
+  transition: 0.2s;
+}
+
+
+
+
+
+.block1-cards-info h3 {
+    font-size: 16px;
+    list-style: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+
+}
+.block1-cards-info p {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: rgba(157, 155, 185, 1);
+ 
+}
+
+.block2-card-info h3 {
+  font-size: 16px;
+  list-style: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  display: inline-block;
+}
+.block2-card-info p {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: rgba(157, 155, 185, 1);
+  text-align: right;
+}
+.bottom-card-position {
+  padding: 12px 16px 16px 16px;
+}
+.cards-container1  {
+  clear: both;
+  overflow: hidden;
+}
+
+/*TOP ARTISTS BLOCK*/
+
+.left-info-1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  font-family: "Poppins", sans-serif;
+}
+.section1_info-1 {
+  clear: both;
+  overflow: hidden;
+  padding-top: 132px;
+}
+
+.frame h3 {
+  display: inline-block;
+}
+ 
