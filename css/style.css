@@ -1,6 +1,6 @@
 /* *  {
-  outline: 1px solid green !important;
-  box-sizing: border-box;
+  outline:1px solid green !important;
+
 }  */
 
 
@@ -18,6 +18,9 @@
 
 .fr {
   float: right;
+}
+.flo {
+  overflow: hidden;
 }
 
 .head-banner {
@@ -49,7 +52,12 @@
     font-family: "Poppins", sans-serif;
     padding-top: 62px;
   }
-  
+  .container-main:after {
+    content: '';
+    display: block;
+    clear: both;
+    overflow: auto;
+  }
 body {
     background-color: #eef1ff;
     overflow-x: hidden;
@@ -113,7 +121,6 @@ body {
 
   .header-menu li:hover {
     transform: scale(0.90);
- 
     transition: transform 0.3s;
   }
 
@@ -254,16 +261,39 @@ main {
 
 /*FIRST BLOCK CARD GROUP*/
 .cards-container {
-  overflow: hidden;
+  
+  padding-bottom: 132px;
 }
-.popular-collections {
-  width: 1200px;
-}
-
-.block1-menu {
-  overflow: hidden;
+.cards-container::after {
+  content: "";
+  display: block;
+  overflow: auto;
   clear: both;
 }
+.cards-container1::after {
+  content: "";
+  display: block;
+  overflow: auto;
+  clear: both;
+}
+.popular-collections {
+  padding-bottom: 32px;
+}
+
+.popular-collections:after{
+  content: "";
+  display: block;
+  overflow: auto;
+  clear: both;
+}
+.block1-menu:after {
+  content: "";
+  display: block;
+  overflow: auto;
+  clear: both;
+}
+
+
 .hot-actions {
   overflow: hidden;
   clear: both;
@@ -283,7 +313,7 @@ main {
 }
 
 .drop-list-btn {
-  padding: 0px 16px 0px 26px;
+  padding: 2px 16px 0px 26px;
 }
 
 select {
@@ -515,15 +545,19 @@ hr {
 /*END OF BLOCK 1 CARDS GROUP*/
 
  /* POPULAR COLLECTIONS CONTAINER */
-.popular-collections {
-  margin-top: 132px;
-}
+
  .popular-coll-title {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 32px;
   line-height: 48px;
   color: rgba(33, 32, 74, 1);
+ }
+ .popular-coll-title:after {
+  content:'';
+  display: block;
+  clear: both;
+  overflow: auto;
  }
 
  .select-data {
@@ -605,8 +639,19 @@ hr {
 /*END OF POPULAR COLLECTIONS BLOCK MENU EDITING*/
   /*CARD SLOTS FOR POPULAR COLLECTIONS  */ 
 .card-collection {
-  overflow: hidden;
   padding-top: 32px;
+}
+
+.card-collection:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.cards-container::after{
+  content: "";
+  display: block;
+  overflow: auto;
+  clear: both;
 }
 
 .cards-container2 {
@@ -621,39 +666,43 @@ hr {
 .cards-container2:last-child{
   margin: 0;
 }
-.cards-position {
-  overflow: hidden;
+.cards-container2:after {
+  content: '';
+  display: block;
+  clear: both;
 }
-
 
 .cards-position .card-coll-img1 {
   padding: 16px 0px 12px 15px;
 }
+
 .cards-position .card-coll-img1:hover {
   transform: scale(0.97);
   transition: 0.2s;
 }
+
 .cards-position .card-coll-img2 {
   padding: 15px 8px 8px 8px;
 }
+
 .cards-position .card-coll-img2:hover {
   transform: scale(0.97);
   transition: 0.2s;
 }
+
 .cards-position .card-coll-img3 {
   padding: 0px 8px 12px 8px ;
 }
+
 .cards-position .card-coll-img3:hover {
   transform: scale(0.96);
   transition: 0.2s;
 }
+
 .cards-position .card-coll-img4:hover {
   transform: scale(0.96);
   transition: 0.2s;
 }
-
-
-
 
 
 .block1-cards-info h3 {
@@ -688,28 +737,785 @@ hr {
   text-align: right;
 }
 .bottom-card-position {
-  padding: 12px 16px 16px 16px;
+  padding: 0px 16px 16px 16px;
 }
-.cards-container1  {
+.cards-container:after  {
+  display: block;
   clear: both;
-  overflow: hidden;
+  overflow: auto;
 }
 
-/*TOP ARTISTS BLOCK*/
+/* TOP ARTISTS BLOCK CONTAINER INFO*/
+.top-artists-row1 {
+  padding-top: 132px;
+}
+.top-artists-row1:after {
+  content: '';
+  display: block;
+  clear: both;
+  overflow: auto;
+}
+.top-artists-row2:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.top-artists-row1 h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+}
+.artists-items:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/*-- TOP ARTISTS CONTAINER CARD (1)*/
+.artist-card1 {
+  padding-top: 32px;
+}
+.artist-card1:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.artist-card1 h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgba(69, 18, 84, 1);
+  padding: 15px;
+}
+.artist-card1 img:hover {
+  transform: scale(0.90);
+  transition: transform 0.3s;
+}
+.artist-info1:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 
-.left-info-1 {
+.artist-info1 h3 {
+  margin: 0px;
+  padding: 0px 0px 0px 12px;
+}
+.artist-info1 a {
+  display: inline-block;
+}
+.artist-info1 a:first-of-type {
+  padding: 10px 0px 0px 73px;
+}
+.artist-info1 img {
+  display: block;
+}
+
+.artist-info1-1:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.artist-info1-1 img {
+  float: left;
+  padding: 6px 6px 6px 10px;
+}
+.artist-info1-1 p:first-of-type{
+  font-size: 16px;
+  margin-top: 8px;
+  margin-left: 1px;
+}
+.artist-info1-1 p:last-child {
+  text-align: right;
+}
+
+.artist-info1-1 p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  align-items: right;
+  color: rgba(157, 155, 185, 1);
+}
+/*-- TOP ARTISTS CONTAINER CARD (2)*/
+
+.artist-card2 {
+  padding-top: 32px;
+}
+.artist-card2:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.artist-card2 h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgba(69, 18, 84, 1);
+  padding: 15px 10.45px 15px 15px;
+}
+.artist-card2 img:hover {
+  transform: scale(0.90);
+  transition: transform 0.3s;
+}
+.artist-info2:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.artist-info2 h3 {
+  margin: 0px;
+  padding: 0px 0px 0px 12px;
+}
+.artist-info2 a {
+  display: inline-block;
+}
+.artist-info2 a:first-of-type {
+  padding: 10px 0px 0px 48px;
+}
+.artist-info2 img {
+  display: block;
+}
+
+.artist-info2-2:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.artist-info2-2 img {
+  float: left;
+  padding: 6px 6px 6px 10px;
+}
+.artist-info2-2 p:first-of-type{
+  font-size: 16px;
+  margin-top: 8px;
+  margin-left: 1px;
+}
+.artist-info2-2 p:last-child {
+  text-align: right;
+}
+
+.artist-info2-2 p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  align-items: right;
+  color: rgba(157, 155, 185, 1);
+}
+
+/*-- TOP ARTISTS CONTAINER CARD (3)*/
+
+.artist-card3 {
+  padding-top: 32px;
+}
+.artist-card3:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.artist-card3 h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgba(69, 18, 84, 1);
+  padding: 15px 10.45px 15px 15px;
+}
+.artist-card3 img:hover {
+  transform: scale(0.90);
+  transition: transform 0.3s;
+}
+.artist-info3:after {
+  content: '';
+  display: block;
+  clear: both;
+  overflow: auto;
+}
+
+.artist-info3 h3 {
+  margin: 0px;
+  padding: 0px 0px 0px 12px;
+}
+.artist-info3 a {
+  display: inline-block;
+}
+.artist-info3 a:first-of-type {
+  padding: 10px 0px 0px 72px;
+}
+.artist-info3 img {
+  display: block;
+}
+
+.artist-info3-3:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.artist-info3-3 img {
+  float: left;
+  padding: 6px 6px 6px 10px;
+}
+.artist-info3-3 p:first-of-type{
+  font-size: 16px;
+  margin-top: 8px;
+  margin-left: 1px;
+}
+.artist-info3-3 p:last-child {
+  text-align: right;
+}
+
+.artist-info3-3 p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  align-items: right;
+  color: rgba(157, 155, 185, 1);
+}
+
+
+/*TOP ARTISTS ROW 2 CONTAINER*/
+
+/*-- TOP ARTISTS CONTAINER CARD (4)*/
+.artist-card4 {
+  padding-top: 32px;
+}
+.artist-card4:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.artist-card4 h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgba(69, 18, 84, 1);
+  padding: 15px 10px 15px 11px;
+}
+.artist-card4 img:hover {
+  transform: scale(0.90);
+  transition: transform 0.3s;
+}
+.artist-info4:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.artist-info4 h3 {
+  margin: 0px;
+  padding: 0px 0px 0px 15px;
+}
+.artist-info4 a {
+  display: inline-block;
+}
+.artist-info4 a:first-of-type {
+  padding: 10px 0px 0px 97px;
+}
+.artist-info4 img {
+  display: block;
+}
+
+.artist-info4-4:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.artist-info4-4 img {
+  float: left;
+  padding: 6px 6px 6px 10px;
+}
+.artist-info4-4 p:first-of-type{
+  font-size: 16px;
+  margin-top: 8px;
+  margin-left: 1px;
+}
+.artist-info4-4 p:last-child {
+  text-align: right;
+}
+
+.artist-info4-4 p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  align-items: right;
+  color: rgba(157, 155, 185, 1);
+}
+/*-- TOP ARTISTS CONTAINER CARD (5)*/
+
+.artist-card5 {
+  padding-top: 32px;
+}
+.artist-card5:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.artist-card5 h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgba(69, 18, 84, 1);
+  padding: 15px 10.45px 15px 15px;
+}
+.artist-card5 img:hover {
+  transform: scale(0.90);
+  transition: transform 0.3s;
+}
+.artist-info5:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.artist-info5 h3 {
+  margin: 0px;
+  padding: 0px 0px 0px 12px;
+}
+.artist-info5 a {
+  display: inline-block;
+}
+.artist-info5 a:first-of-type {
+  padding: 10px 0px 0px 95px;
+}
+.artist-info5 img {
+  display: block;
+}
+
+.artist-info5-5:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.artist-info5-5 img {
+  float: left;
+  padding: 6px 6px 6px 10px;
+}
+.artist-info5-5 p:first-of-type{
+  font-size: 16px;
+  margin-top: 8px;
+  margin-left: 1px;
+}
+.artist-info5-5 p:last-child {
+  text-align: right;
+}
+
+.artist-info5-5 p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  align-items: right;
+  color: rgba(157, 155, 185, 1);
+}
+
+/*-- TOP ARTISTS CONTAINER CARD (6)*/
+
+.artist-card6 {
+  padding-top: 32px;
+}
+.artist-card6:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.artist-card6 h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgba(69, 18, 84, 1);
+  padding: 15px 10.45px 15px 15px;
+}
+.artist-card6 img:hover {
+  transform: scale(0.90);
+  transition: transform 0.3s;
+}
+.artist-info6:after {
+  content: '';
+  display: block;
+  clear: both;
+  overflow: auto;
+}
+
+.artist-info6 h3 {
+  margin: 0px;
+  padding: 0px 0px 0px 12px;
+}
+.artist-info6 a {
+  display: inline-block;
+}
+.artist-info6 a:first-of-type {
+  padding: 10px 0px 0px 96px;
+}
+.artist-info6 img {
+  display: block;
+}
+
+.artist-info6-6:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.artist-info6-6 img {
+  float: left;
+  padding: 6px 6px 6px 10px;
+}
+.artist-info6-6 p:first-of-type{
+  font-size: 16px;
+  margin-top: 8px;
+  margin-left: 1px;
+}
+.artist-info6-6 p:last-child {
+  text-align: right;
+}
+
+.artist-info6-6 p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  align-items: right;
+  color: rgba(157, 155, 185, 1);
+}
+
+
+/*TRENDING NFTS CONTAINER BLOCK*/
+
+.trending-nfts {
+  padding-top: 132px;
+}
+.trending-nft-card1 {
+  cursor: pointer;
+}
+.hot-middle-card .clock {
+  padding: 2px;
+}
+
+.trending-nft-card1:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.trending-nft-card1-1:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.trending-nft-card1 .hot-middle-card{
+  border: 1px solid transparent;
+  background-color: rgba(160, 160, 214, 0.1);
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 12px;
+}
+
+.trending-nft-card1 .card-bid1 {
+  height: 444px;
+}
+.trending-nft-card1 {
+  margin-right: 21px;
+}
+.trending-nft-card1:last-child {
+  margin: 0px;
+}
+
+/*LIST YOUR ART NFTS CONTAINER BLOCK*/
+  /*LADY NFT IMAGE BLOCK*/
+.list-your-art {
+  display: inline-block;
+  padding-top: 132px;
+}
+.list-your-art:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.list-art-item {
+  width: 248px;
+  background-color: white;
+  border: 1px solid transparent;
+  padding: 16px;
+  border-radius: 16px;
+  margin: 70px 0px 70px 0px;;
+}
+
+.list-art-item figcaption {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(69, 18, 84, 1);
+}
+
+.list-art-item #verified {
+  padding-left: 8px;
+}
+.list-art-item p {
+font-family: "Poppins",sans-serif;
+font-size: 12px;
+font-weight: 500;
+line-height: 16px;
+text-align: left;
+color: rgba(110, 132, 171, 1);
+}
+.list-art-item:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*MEN NFT IMAGE BLOCK 2*/
+.list-art-item2 {
+  width: 248px;
+  background-color: white;
+  border: 1px solid transparent;
+  padding: 16px;
+  border-radius: 16px;
+  margin-left: 28px;
+}
+
+.list-art-item2 figcaption {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(69, 18, 84, 1);
+}
+.list-art-item2 #verified2 {
+  padding-left: 8px;
+}
+.list-art-item2 p {
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  color: rgba(110, 132, 171, 1);
+}
+.list-art-item2:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/*LIST ART INFO - CONTAINER BLOCK*/
+
+.list-art-info {
+  padding: 98px 0px 98px 48px;
+  text-align: left;
+}
+.list-art-info h3 {
+  font-family: "Poppins", sans-serif;
   font-size: 32px;
   font-weight: 600;
   line-height: 48px;
-  font-family: "Poppins", sans-serif;
+  text-align: left;
+  color: rgba(33, 32, 74, 1);
 }
-.section1_info-1 {
-  clear: both;
-  overflow: hidden;
-  padding-top: 132px;
+.list-art-info p {
+
+  font-family: "Poppins", sans-serif;
+font-size: 16px;
+font-weight: 300;
+line-height: 24px;
+text-align: left;
+color: rgba(100, 96, 159, 1);
+}
+/*ARTIST BUTTON*/
+.list-art-info #artist {
+  width: 169px;
+height: 48px;
+padding: 12px 24px 12px 24px;
+cursor: pointer;
+border-radius: 12px;
+border: none;
+outline: none;
+background-color: #0697f9;
+background-image: linear-gradient(219deg, #0697f9 0%, #f906f9 86%);
+color: white;
+
+
+font-family: "Poppins", sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+}
+.list-art-info #artist:hover {
+  transform: scale(0.90);
+    transition: transform 0.3s;
+    box-shadow: 40px 0 100px #008cff;
+ 
+}
+/*BUYER BUTTON*/
+
+
+.list-art-info #buyer {
+  
+  /* padding: 12px 24px 12px 24px;
+  cursor: pointer;
+ 
+  background: linear-gradient(to left, #743ad5, #d53a9d);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+  border-image-slice: 30;
+  border-radius: 15px;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px; */
+  /* border: 10px solid;
+  border-image-source: linear-gradient(to right, red, blue);
+  border-image-slice: 1;
+  border-radius: 15px;
+  padding: 10px 20px; */
+  
+
 }
 
-.frame h3 {
-  display: inline-block;
+.list-art-info p {
+  padding-bottom: 32px;
 }
- 
+
+#artist {
+  display: block;
+  float: left;
+}
+#buyer {
+  padding: 0px;
+  display: block;
+  padding-left: 16px;
+}
+
+
+#buyer:hover {
+  transform: scale(0.90);
+  transition: transform 0.3s;
+  border-radius: 12px;
+  background-color: #eef1ff;
+  cursor: pointer;
+    
+}
+
+.list-art-item:hover {
+  box-shadow: 48px 0 50px #a00474;
+  cursor: pointer;
+
+}
+
+.list-art-item2:hover {
+  box-shadow: 40px 0 50px #008cff;
+  cursor: pointer;
+}
+/* BROWSE BY CATEGORY */
+
+.browse-category:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.browse-category2:after {
+  content: '';
+  display: block;
+  clear: both;
+  overflow: auto;
+}
+.browse-category .browse-title1 {
+  padding-bottom: 32px;
+}
+.browse-item1 {
+  margin-right: 24px;
+}
+.browse-item2 {
+  margin-right: 24px;
+}
+.browse-item1 img{
+cursor: pointer;
+padding: 16px;
+gap: 24px;
+border-radius: 16px;
+border: 0px solid red;
+background-color: white;
+outline: none;
+}
+
+.browse-title1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  color: #21204A;
+}
+
+.browse-item2 img{
+cursor: pointer;
+padding: 16px;
+gap: 24px;
+border-radius: 16px;
+border: 0px solid red;
+background-color: white;
+outline: none;
+
+
+}
+.browse-title2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  color: #21204A;
+}
+.browse-item3 img{
+cursor: pointer;
+padding: 16px;
+gap: 24px;
+border-radius: 16px;
+border: 0px solid red;
+background-color: white;
+outline: none;
+
+
+}
+.browse-title3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  color: #21204A;
+}
+.browse-item4 img{
+cursor: pointer;
+padding: 16px;
+gap: 24px;
+border-radius: 16px;
+border: 0px solid red;
+background-color: white;
+outline: none;
+
+
+}
+.browse-title4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  color: #21204A;
+}
+.browse-category2 {
+  margin-top: 23px;
+}
