@@ -27,13 +27,14 @@
 <meta property="og:image:height" content="200" />
 <meta property="og:image:alt" content="selector" />
 
-
 <link rel="stylesheet" href="./css/reset.css" />
 <link rel="stylesheet" href="./css/style.css" />
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Major+Mono+Display&family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
    <!--TODO: CHECK AGAIN ALL THE WEB PAGE, TO FIND ANY ERRORS-->
 </head>
 <body>
@@ -65,6 +66,7 @@
                     </p>
                     <button type="button" class="explore-btn fl"><span class="exp-text fl">Explore now</span><img class="exp-btn-img exp-btn-box fr"src="/images/icons/arrow-right.svg"></button>
                 </div>
+                <h4 class="header-left_creator">creator ⚡ ddevoverr</h4>
                 <div class="header-rightcol fr ">
                     <img src="/images/icons/Illuimg.svg" alt="Illum Image" title="Illum Image" width="655" height="592">
                 </div>
@@ -604,8 +606,8 @@
             <h3>List your art on MyNFT</h3>
             <p>Are you an artist or NFT project creator? Get in touch<br>
                 with us to get your content on Nifty Gateway!</p>
-                <button id="artist">I am an artist</button>
-               <img  id="buyer" src="./images/list-your-art/button-l.svg" alt="Button">
+                <button id="artist" type="button">I am an artist</button>
+               <a href="#"><img id="buyer" src="./images/list-your-art/button-l.svg" alt="Button"></a>
         </article>
     </section>   
     <!-- BROWSE BY CATEGORY - BLOCK CONTAINER-->
@@ -639,63 +641,150 @@
         <article class="browse-item4 fr">
             <img src="./images/browse-by-category/item8.svg" alt="Illustrating image">
         </article>
-    </section>                        
+    </section> 
+    <!-- THE PREMIER MARKET PLACE FOR NFTS - CONTAINER BLOCK--> 
+     <section class="premier-marketplace">
+        <!-- PREMIER LEFT BLOCK-->
+        <article class="premier-left_block fl">
+            <h3 class="">The Premier Marketplace for NFTs</h3>
+            <p class="">MyNFT is the premier marketplace for item in blockchain, which are<br> digital
+                items you can truly own. Digital Items have existed for a long time,<br> but
+                never like this.</p>
+                <button id="premier-btn" type="button">Learn more</button>
+        </article>
+        <!-- PREMIER RIGHT BLOCK-->
+        <article class="premier-right_block fr">
+            <a href="#"><img  class="premier-img1 fl" src="./images/premier-marketplace/rect1.svg" alt="Budhha sitting on the floor" title="Buddha"></a>
+            <a href="#"><img  class="premier-img2" src="./images/premier-marketplace/rect2.svg" alt="Astronaut" title="Astronaut"></a>
+            <a href="#"><img  class="premier-img3" src="./images/premier-marketplace/rect3.svg" alt="Lady Face" title="Lady Face"></a>
+        </article>
+     </section>  
+     <!-- CONTAINER BLOCK ON THE BOTTOM WITH A YOUTUBE FRAME INSIDE.--> 
+     <section class="why-nfts">
+        <article class="nft-left_block fl">
+            <h3 class="nfts-title">Why MyNFT</h3>
+            <p class="nfts-para">Are you an artist or NFT project creator? Get in touch<br>
+                with us to get your content on Nifty Gateway!</p>
+                <button class="nfts-btn"><span class="nfts-text fl">Explore the marketplace</span><img class="nfts-img" src="./images/why-nfts/arrow-right.svg" alt="Button Arrow">
+                </button>
+        </article>
+        <article class="nft-right_block fr">
+            <iframe width="610" height="315"  src="https://www.youtube.com/embed/ldJmUXCQfgo?si=MZEASw53StkPV-E4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </article>
+     </section> 
+     <!-- CREATE AND SELL YOUR NFT'S - BLOCK CONTAINER-->
+     <section class="sell-nfts">
+            <h3 class="sell-nfts_title">Create and Sell your NFTs</h3>
+            <section class="sell-nfts_cards">
+            <!-- SELL ITEM - CARD (1)-->
+        <article class="sell-item1 fl">
+            <a href="#"><img src="./images/create-sell-nft/wallet.svg" alt="Illustrating image"></a>
+            <h4 class="sell-item_title1">Set up your wallet</h4>
+            <p class="sell-item_para1">Choose between auctions, fixed-price<br>listings, and declining-price listings. We<br> will help to sell your NFTs!
+        </article>
+        <!-- SELL ITEM - CARD (2)-->
+        <article class="sell-item2 fl">
+            <a href="#"><img src="./images/create-sell-nft/dots.svg" alt="Illustrating image"></a>
+            <h4 class="sell-item_title2">Create your collection</h4>
+            <p class="sell-item_para2">Set up your collection. Add social links, a<br> description, profile & banner images,<br> and set a secondary sales fee.
+        </article>
+        <!-- SELL ITEM - CARD (3)-->
+        <article class="sell-item3 fl">
+            <a href="#"><img src="images/create-sell-nft/image.svg" alt="Illustrating image"></a>
+            <h4 class="sell-item_title3">Add your NFTs</h4>
+            <p class="sell-item_para3">Upload your work (image, video, audio,<br> or 3D art), add a title and description,<br> properties, and unlockable content.
+        </article>
+        <!-- SELL ITEM - CARD (4)-->
+        <article class="sell-item4">
+            <a href="#"><img src="images/create-sell-nft/kite.svg" alt="Illustrating image"></a>
+            <h4 class="sell-item_title4">List them for sale</h4>
+            <p class="sell-item_para4">Choose between auctions, fixed-price<br> listings, and declining-price listings. We<br> will help to sell your NFTs!
+        </article>
+        </section>
+     </section>  
+     <!-- DOWNLOAD MY NFT APP - CONTAINER BLOCK-->      
+      <section class="nft-app_container">
+        <!-- LEFT TEXT BLOCK (1)-->
+        <article class="nft-app_item1 fl">
+            <h3 class="nft-app_title">Download MyNFTs app<span class="nft-title_thin"> to track your NFT<br>portfolio and discover drops</span></h3>
+           <div class="nft-bbtn">
+            <a href="#" class="nft-app_btn1 fl">
+                <img class="nft-app_img1" src="./images/my-nft-app/Button-M.svg" alt="Apple icon"><span class="nft-btn_text1"></span></a>
+            <a href="#" class="nft-app_btn2 fl">
+                <img class="nft-app_img2" src="./images/my-nft-app/Button-G.svg" alt="Googple icon"></a>
+           </div>
+        </article>
+        <!-- CENTER BLOCK (2)-->
+        <article class="nft-app_iphones fl">
+            <a href="#"><img class="nft-app_img2" src="./images/my-nft-app/iphone.svg" alt="Illustrating image"></a>
+        </article>
+        <!-- RIGHT BLOCK (3)-->
+        <article class="nft-app_barcode fr">
+            <img class="nft-app_img3 fl" src="./images/my-nft-app/bar-code.svg" alt="Illustrating image" title="QR-Code Scan to Download our App">
+            <div class="nft-appbr_text fr">
+            <p class="nft-barcode_text"><img class="nft-app_img4" src="./images/my-nft-app/arrow-left.svg">Scan to<br>download<br> MyNFT app</p>
+            </div>
+        </article>
+      </section>      
     </main>
 <!-- FOOTER MAIN INFO -->
-<footer class="container">
-    <div>
-        <a href="#"><img src="/images/icons/Logo.svg" id="logo" alt="Website Logotype" title="Web Logo"></a>
-        <h2>MyNFT.com</h2>
-        <p>The world&prime;s first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.</p>
-        <p>© 2022 NFT Marketplace. All rights reserved.</p>
-    </div>
-<!-- MENU LIST NAVIGATION ABOVE THE SITE-->
-    <div>
-        <nav>
-            <ul>
-                <li><b>Market Place</b></li>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Help Center</a></li>
-                <li><a href="#">Blogs</a></li>
-            </ul>
-            <ul>
-                <li><b>Company</b></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">Feature</a></li>
-                <li><a href="#">Discover</a></li>
-            </ul>
-        </nav>
-    </div>
-<!-- INPUT FORM E-MAIL-->
-    <div class="media">
-        <h3>Get our latest updates</h3>
-        <form action="" method="post">
-            <label for="email">
-                <img src="/images/icons/mail.svg" alt="Email icon" title="Email icon">
-            </label>
-            <input type="email" name="email" id="email" placeholder="Enter your email" required autocomplete="email">
-            <button type="submit">Subscribe</button>
-        </form>
-        <h3>Join our community</h3>
-        <!-- SOCIAL MEDIA LINKS-->
-       <ul>
-       <li><a href="https://facebook.com/"><img src="/images/social/facebook.svg" alt="Facebook" title="Facebook" aria-label="Facebook"></a></li> <!-- FACEBOOK LINK-->
-
-        <li><a href="https://youtube.com/"><img src="/images/social/youtube.svg" alt="Youtube" title="Youtube" aria-label="Youtube"></a></li> <!-- YOUTUBE LINK-->
-
-        <li><a href="https://twitter.com/"><img src="/images/social/twitter.svg" alt="Twitter" title="Twitter" aria-label="Twitter">
-        </a></li> <!-- TWITTER LINK-->
-
-        <li><a href="https://instagram.com/"><img src="/images/social/instagram.svg" alt="Instagram" title="Instagram" aria-label="Instagram">
-        </a></li> <!-- INSTAGRAM LINK-->
-
-        <li><a href="https://telegram.com/"><img src="/images/social/telegram.svg" alt="Telegram" title="Telegram" aria-label="Telegram">
-        </a></li> <!-- TELEGRAM LINK-->
-       </ul>
-    </div>
+<footer>
+    <section class="footer-info container">
+        <article class="footer-block1 fl">
+            <a href="#"><img class="footer-block_logo" src="/images/icons/Logo.svg" id="logo" alt="Website Logotype" title="Web Logo"></a>
+            <h2 class="footer-block_title">MyNFT.com</h2>
+            <p class="footer-block_text1">The world&prime;s first and largest digital<br> marketplace for crypto collectibles and non-<br>fungible tokens (NFTs). Buy, sell, and discover<br> exclusive digital items.</p>
+            <p class="footer-block_text2">© 2024 NFT Marketplace. All rights reserved.</p>
+            </article>
+            <!-- LEFT COLUMN NAVIGATION-->
+            <article class="footer-nav fl">
+                <nav class="footer-nav_list1 fl">
+                <ul>
+                    <li>Market Place</li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>  
+                </nav>
+            </article>
+            <!-- RIGHT COLUMN NAVIGATION-->
+            <article class="footer-nav2 fl">
+                <nav class="footer-nav_list2">
+                <ul> 
+                    <li>Company</li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">Discover</a></li>
+                </ul>
+                </nav>
+        </article>
+        <!-- SUBSCRIBE BUTTON - SEND E-MAIL FORM-->
+        
+        <article class="form-wrapper fl">
+            <h3 class="form-title">Get our lastest updates</h3>
+            <form class="send-form fl" action="/" method="post">
+                <label>
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" class="input-field" placeholder="Your email" required autocomplete="email">
+                <button  class="input-btn" type="submit" value="send">Subscribe</button>
+                </label>
+            </form>
+        </article>
+        <article class="form-social fl">
+            <h3 class="social-title">Join our community</h3>
+            <nav class="form-social_links ">
+                <ul class="form-social_list">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f" aria-label="Visit our Facebook page" title="Facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter" aria-label="Follow us on Twitter" title="Twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram" aria-label="Follow us on Instagram" title="Instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in" aria-label="Connect with us on Linked-in" title="Linked-in"></i></a></li>
+                </ul>
+            </nav>
+        </article>
+    </section>
 </footer>
 </body>
 </html>
