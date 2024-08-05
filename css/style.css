@@ -1,7 +1,5 @@
 /* *  {
-  outline:1px solid green !important;
-
-}  */
+  outline:1px solid green !important;}  */
 
 
 .clearfix {
@@ -166,9 +164,27 @@ body {
   
 .header_leftcol {
   overflow: hidden;
-
 }
-
+.header-leftcol {
+  padding-top: 78px;
+}
+.header-leftcol:after {
+  content: '';
+  display: block;
+  clear: both;
+  overflow: auto;
+}
+.header-left_creator {
+  font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(to right, #F906F9, #0698F9);
+  user-select: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  text-align: left;
+}
 .header-leftcol h1 {
   color: white;
   font-size: 40px;
@@ -176,7 +192,6 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
-  padding-top: 76px;
 }
 
 .header-leftcol p {
@@ -212,7 +227,7 @@ body {
   cursor: pointer;
 }
 
-.explore-btn:active {
+.explore-btn:hover {
   transform: scale(0.95);
   transition: background-color 0.3s, transform 0.10s;
   background: #F906F9;
@@ -1190,7 +1205,7 @@ hr {
 /*TRENDING NFTS CONTAINER BLOCK*/
 
 .trending-nfts {
-  padding-top: 132px;
+  margin-top: 132px;
 }
 .trending-nft-card1 {
   cursor: pointer;
@@ -1231,8 +1246,8 @@ hr {
 /*LIST YOUR ART NFTS CONTAINER BLOCK*/
   /*LADY NFT IMAGE BLOCK*/
 .list-your-art {
-  display: inline-block;
-  padding-top: 132px;
+
+  margin-top: 132px;
 }
 .list-your-art:after{
   content: '';
@@ -1309,7 +1324,7 @@ color: rgba(110, 132, 171, 1);
 /*LIST ART INFO - CONTAINER BLOCK*/
 
 .list-art-info {
-  padding: 98px 0px 98px 48px;
+  padding: 98px 140px 98px 0px;
   text-align: left;
 }
 .list-art-info h3 {
@@ -1357,33 +1372,6 @@ text-align: center;
 }
 /*BUYER BUTTON*/
 
-
-.list-art-info #buyer {
-  
-  /* padding: 12px 24px 12px 24px;
-  cursor: pointer;
- 
-  background: linear-gradient(to left, #743ad5, #d53a9d);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-
-  border-image-slice: 30;
-  border-radius: 15px;
-  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
-  
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px; */
-  /* border: 10px solid;
-  border-image-source: linear-gradient(to right, red, blue);
-  border-image-slice: 1;
-  border-radius: 15px;
-  padding: 10px 20px; */
-  
-
-}
-
 .list-art-info p {
   padding-bottom: 32px;
 }
@@ -1419,7 +1407,9 @@ text-align: center;
   cursor: pointer;
 }
 /* BROWSE BY CATEGORY */
-
+.browse-category {
+  margin-top: 132px;
+}
 .browse-category:after {
   content: '';
   display: block;
@@ -1518,4 +1508,644 @@ outline: none;
 }
 .browse-category2 {
   margin-top: 23px;
+}
+
+/* THE PREMIER MARKET PLACE FOR NFTS - CONTAINER BLOCK */
+
+.premier-left_block:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.premier-right_block:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.premier-left_block h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: left;
+  color: #21204A;
+  padding-top: 78px;
+}
+
+.premier-left_block p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  color: #64609F;
+  
+  padding: 24px 0px 28px 0px;
+}
+
+#premier-btn {
+  font-family: "Poppins", sans-serif;
+  width:151px;
+  height: 48px;
+  padding: 12px 24px 12px 24px;
+  gap: 10px;
+  border-radius: 12px;
+  border: 2px solid #6692CC;
+
+  color: #6692CC;
+  background: transparent;
+  cursor: pointer;
+  
+}
+#premier-btn:hover {
+  transform: scale(0.90);
+  transition: transform 0.3s;
+}
+.premier-marketplace {
+  margin-top: 132px;
+}
+.premier-marketplace:after {
+  content: "";
+  display: block;
+  clear: both;
+  overflow: auto;
+}
+
+.premier-right_block a {
+  display: inline-block;
+}
+.premier-right_block a:nth-child(1)  {
+  float: left;
+}
+.premier-right_block a:nth-child(3)  {
+  display: block
+}
+
+.premier-right_block img {
+  display: block;
+}
+.premier-right_block .premier-img2 {
+  padding-top: 36px;
+}
+.premier-img1 {
+  width: 350px;
+  height: 328px;
+}
+
+.premier-img2 {
+  width: 171.45px;
+  height: 160px;
+  padding-left: 56px;
+}
+
+.premier-img3 {
+  width: 128.59px;
+  height: 120px;
+  padding: 48px 0px 0px 56px ;
+}
+
+/* CONTAINE BLOCK ON THE BOTTOM WITH A YOUTUBE FRAME INSIDE */
+
+.why-nfts::after{
+  content: "";
+  display: block;
+  clear: both;
+  overflow: auto;
+}
+.why-nfts {
+  background-image: url('/images/why-nfts/bg.jpeg');
+  background-size: cover;
+  background-position: center center;
+
+  border-radius: 34px;
+  height: 417px;
+  margin-top: 132px;
+  -webkit-box-shadow: inset -47px -38px 132px 57px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: inset -47px -38px 72px 12px rgba(0, 0, 0, 0.7);
+  box-shadow: inset -91px -99px 72px 12px rgba(0, 0, 0, 0.7);
+  
+}
+.nfts-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: left;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+
+.nfts-para {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  color: #BDCADB;
+  margin-bottom: 42px;
+}
+.nfts-btn {
+  width: 263px;
+  height: 44px;
+  padding: 10px 16px 10px 24px;
+
+  border-radius: 12px ;
+  background: linear-gradient(to right, #F906F9 0%, #0698F9 64%);
+  background-position: center center;
+  outline: none;
+  border: transparent;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+
+}
+.nfts-btn .nfts-img{
+  padding: 4px 2px 2px 9px;
+}
+.nfts-btn:hover {
+  transform: scale(0.90);
+  transition: transform 0.3s;
+  background: linear-gradient(to right, #f906f9bd 0%, #0698f9be 64%);
+}
+.nft-left_block:after {
+  content: '';
+  display: block;
+  clear: both;
+  overflow: auto;
+}
+.nft-left_block {
+  padding: 110px 0px 89px 71px;
+  border-radius: 32px;
+
+
+}
+.nfts-text {
+  display: block;
+}
+
+/*IFRAME - WHYNFTS CONTAINER*/
+
+.nft-right_block:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.nft-right_block {
+  padding: 52px 52px 47px 0px;
+}
+.nft-right_block iframe {
+  border-radius: 24px;
+}
+
+/*CREATE AND SELL YOUR NFT'S - BLOCK CONTAINER*/
+.sell-nfts {
+  margin-top: 132px;
+}
+.sell-nfts article {
+  padding: 0px 24px 0px 0px;
+}
+.sell-nfts article:nth-child(4) {
+  padding-right: 0px;
+}
+
+.sell-title_block {
+  margin: 0 auto;
+}
+.sell-nfts_title {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  color: rgba(33, 32, 74, 1);
+  margin: 0 auto;
+  padding-bottom: 48px;
+}
+.sell-nfts_cards a {
+  display: block;
+}
+.sell-nfts_cards:after {
+  content: '';
+  display: block;
+  clear: both;
+  overflow: auto;
+}
+/* SELL ITEM - CARD 1*/
+.sell-item_title1{
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(17, 49, 91, 1);
+  padding-top: 24px;
+}
+.sell-item_para1 {
+  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left; 
+  padding-top: 12px;
+  color: rgba(71, 98, 133, 1);
+}
+
+/*SELL ITEM -CARD 2*/
+.sell-item_title2{
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(17, 49, 91, 1);
+  padding-top: 24px;
+}
+.sell-item_para2 {
+  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left; 
+  padding-top: 12px;
+  color: rgba(71, 98, 133, 1);
+}
+/*SELL ITEM -CARD 3*/
+.sell-item_title3{
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(17, 49, 91, 1);
+  padding-top: 24px;
+}
+.sell-item_para3 {
+  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left; 
+  padding-top: 12px;
+  color: rgba(71, 98, 133, 1);
+}
+/*SELL ITEM -CARD 4*/
+.sell-item_title4{
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(17, 49, 91, 1);
+  padding-top: 24px;
+}
+.sell-item_para4 {
+  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left; 
+  padding-top: 12px;
+  color: rgba(71, 98, 133, 1);
+}
+/* DOWNLOAD MY NFT APP - CONTAINER BLOCK*/
+
+.nft-app_container {
+  
+  margin: 132px 0px 132px 0px;
+  border-radius: 32px;
+  background-color: rgba(110, 132, 171, 1);
+  height: 274px;
+}
+.nft-app_item1 {
+  padding: 75px 0px 72px 49px;
+}
+.nft-app_title {
+
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: white;
+  margin-bottom: 32px;
+}
+.nft-title_thin {
+
+font-family: "Poppins", sans-serif;
+font-size: 18px;
+font-weight: 300;
+line-height: 24px;
+text-align: left;
+
+}
+.nft-app_btn1 {
+  margin-right: 12px;
+}
+.nft-app_btn1:hover {
+  transform: scale(0.90);
+  transition: transform 0.3s;
+}
+.nft-app_btn2:hover {
+  transform: scale(0.90);
+    transition: transform 0.3s;
+}
+
+
+.nft-app_iphones {
+  margin: 26px 0px 0px 78px;
+}
+.nft-app_iphones a{
+  display: block;
+}
+.nft-app_iphones a img {
+  display: block;
+}
+.nft-app_iphones:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.nft-app_barcode{
+  margin: 50px 50px 50px 0px;
+}
+
+.nft-app_barcode:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.nft-app_img3 {
+  cursor: pointer;
+}
+.nft-app_img4 {
+  display: block;
+}
+
+.nft-barcode_text {
+  display: inline-block;
+  
+}
+.nft-appbr_text .nft-barcode_text {
+  padding: 25px 20px 20px 25px;
+  color: rgba(240, 246, 255, 1);
+}
+.nft-appbr_text .nft-app_img4 {
+  padding-bottom: 42px;
+} 
+/*FOOTER - INFORMATION */
+
+footer {
+  background-image: url('/images/Noise.png');
+  background-color: rgba(33, 32, 74, 1);
+  height: 373px;
+}
+.footer-block1:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.footer-block1 {
+  margin-top: 64px;
+}
+.footer-block_title {
+font-family: "Poppins", sans-serif;
+font-size: 24px;
+font-weight: 600;
+line-height: 36px;
+text-align: left;
+color: white;
+display: inline-block;
+padding: 5px;
+display: block;
+
+
+}
+.footer-block1 a{
+  float: left;
+  padding-right: 16px;
+}
+.footer-block_text1 {
+  margin-top: 20px;
+font-family: "Poppins", sans-serif;
+font-size: 14px;
+font-weight: 300;
+line-height: 22px;
+text-align: left;
+color: rgba(189, 202, 219, 1);
+
+}
+.footer-block_text2 {
+  margin-top: 20px;
+font-family: "Poppins", sans-serif;
+font-size: 14px;
+font-weight: 300;
+line-height: 22px;
+text-align: left;
+color: rgba(189, 202, 219, 1);
+
+}
+/*NAVIGATION LIST*/
+
+/*UL FIRST MENU*/
+.footer-nav_list1:after {
+  content: '';
+  display: block;
+  clear: both;
+  overflow: auto;
+}
+.footer-nav_list1 {
+  margin: 64px 69px 0px 176px;
+}
+.footer-nav_list1 ul li {
+font-family: "Poppins", sans-serif;
+font-size: 14px;
+font-weight: 300;
+line-height: 21px;
+text-align: left;
+padding: 10px;
+transition: box-shadow 0.3s ease;
+border-radius: 5px;
+}
+.footer-nav_list1 ul li a {
+  color: rgba(189, 202, 219, 1);
+  text-decoration: none;
+}
+.footer-nav_list1 ul li:first-of-type{
+
+  font-family: "Poppins", sans-serif;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+text-align: left;
+  color: white;
+  padding-bottom: 20px;
+} 
+/*UL SECOND MENU */
+.footer-nav_list2 {
+  margin-top: 64px;
+}
+.footer-nav_list2 ul li {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  text-align: left;
+  padding: 10px;
+
+  }
+  .footer-nav_list2 ul li a {
+    color: rgba(189, 202, 219, 1);
+    text-decoration: none;
+  }
+  .footer-nav_list2 ul li:first-of-type{
+  
+    font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+    color: white;
+    padding-bottom: 20px;
+  } 
+  .footer-nav:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .footer-nav2:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .media:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .footer-nav_list1 ul li:hover {
+    transform: scale(0.90);
+    transition: transform 0.3s;
+  }
+
+
+  .footer-nav_list2 ul li:hover {
+    transform: scale(0.90);
+    transition: transform 0.3s;
+
+  }
+.footer-nav_list1 ul li:first-of-type{
+  transform: none;
+  transition: none;
+}
+.footer-nav_list2 ul li:first-of-type{
+  transform: none;
+  transition: none;
+}
+
+/*SEND EMAIL - OR SUBSCRIBE - CONTAINER BLOCK*/
+
+.form-wrapper {
+  width: 300px;
+  max-width: 100%;
+  margin-top: 74px;
+  margin-left: 55px;
+  
+}
+.form-title {
+
+font-family: "Poppins", sans-serif;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+text-align: left;
+color: white;
+padding-bottom: 30px;
+
+}
+
+.send-form input{
+  width: 308px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid grey;
+  font-family: "Poppins", sans-serif;
+  
+  background-color: rgba(215, 214, 220, 0.2);
+}
+.send-form .fa-regular {
+    position: absolute;
+    padding: 12px;
+    font-size: 25px;
+    color: rgba(157, 155, 185, 1);
+}
+.send-form ::placeholder {
+
+  color: rgba(157, 155, 185, 1);
+}
+.form-wrapper:after {
+  content: '';
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+.send-form input[type=email]{
+  padding-left: 50px;
+  color: white;
+  font-size: 16px;
+  
+}
+.send-form {
+  position: relative;
+}
+.send-form button {
+  position: absolute;
+  right: 5px;
+  top: 6px;
+  width: 114px;
+  height: 36px;
+  gap: 0px;
+  border-radius: 8px;
+  background-color: rgba(205, 226, 254, 1);
+  border: none;
+  font-size: 16px;
+  font-family:"Poppins",sans-serif;
+
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+/*JOIN OUR COMMUNITY - CONTAINER BLOCK*/
+
+.form-social {
+  margin-top: 60px;
+  margin-left: 55px;
+}
+.social-title {
+  font-family: "Poppins", sans-serif;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+text-align: left;
+color: white;
+padding-bottom: 30px;
+}
+.form-social_list .fa-brands {
+  color: rgba(189, 202, 219, 1);
+  font-size: 18px;
+}
+.form-social_list li {
+  display: inline;
+  padding-right: 25px;
 }
