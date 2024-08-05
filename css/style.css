@@ -2063,6 +2063,12 @@ text-align: left;
   margin-left: 55px;
   
 }
+.form-wrapper:after {
+  content: '';
+  display: block;
+  clear: both;
+  overflow: auto;
+}
 .form-title {
 
 font-family: "Poppins", sans-serif;
@@ -2073,6 +2079,12 @@ text-align: left;
 color: white;
 padding-bottom: 30px;
 
+}
+.send-form:after {
+  content: '';
+  display: block;
+  clear: both;
+  overflow: hidden;
 }
 
 .send-form input{
@@ -2132,6 +2144,12 @@ padding-bottom: 30px;
   margin-top: 60px;
   margin-left: 55px;
 }
+.form-social:after {
+  content: '';
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
 .social-title {
   font-family: "Poppins", sans-serif;
 font-size: 16px;
@@ -2148,4 +2166,10 @@ padding-bottom: 30px;
 .form-social_list li {
   display: inline;
   padding-right: 25px;
+}
+.hr-clear {
+  width: 1200px;
+}
+.form-social {
+  margin-bottom: 30px;
 }
