@@ -392,8 +392,6 @@ select::-ms-expand {
 }
 
 .card-bid1 {
-  width: 252px;
-  height: 468px;
   border-radius: 16px;
   padding: 16px;
   background-color: white;
@@ -671,7 +669,6 @@ hr {
 
 .cards-container2 {
   width: 384px;
-  height: 255px;
   gap: 12px;
   border-radius: 12px;
   opacity: 0px;
@@ -688,7 +685,7 @@ hr {
 }
 
 .cards-position .card-coll-img1 {
-  padding: 16px 0px 12px 15px;
+  padding: 16px 0px 16px 16px;
 }
 
 .cards-position .card-coll-img1:hover {
@@ -726,6 +723,9 @@ hr {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
 
+}
+.block1-cards-info {
+  padding-bottom: 16px;
 }
 .block1-cards-info p {
   font-size: 12px;
@@ -1233,9 +1233,6 @@ hr {
   margin-top: 12px;
 }
 
-.trending-nft-card1 .card-bid1 {
-  height: 444px;
-}
 .trending-nft-card1 {
   margin-right: 21px;
 }
@@ -1255,7 +1252,7 @@ hr {
   clear: both;
 }
 .list-art-item {
-  width: 248px;
+
   background-color: white;
   border: 1px solid transparent;
   padding: 16px;
@@ -1290,7 +1287,6 @@ color: rgba(110, 132, 171, 1);
 
 /*MEN NFT IMAGE BLOCK 2*/
 .list-art-item2 {
-  width: 248px;
   background-color: white;
   border: 1px solid transparent;
   padding: 16px;
@@ -2114,8 +2110,8 @@ padding-bottom: 30px;
 }
 .send-form input[type=email]{
   padding-left: 50px;
-  color: white;
-  font-size: 16px;
+  color: whitesmoke;
+  font-size: 13px;
   
 }
 .send-form {
@@ -2173,3 +2169,5 @@ padding-bottom: 30px;
 .form-social {
   margin-bottom: 30px;
 }
+/*END OF WEB CODE */
+
