@@ -45,7 +45,6 @@
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    overflow: hidden;
     clear: both;
     font-family: "Poppins", sans-serif;
     padding-top: 62px;
@@ -58,7 +57,9 @@
   }
 body {
     background-color: #eef1ff;
-    overflow-x: hidden;
+    width: 100%;
+    min-width: 1200px;
+
   }
   /* HEAD INFORMATION BLOCK*/
   
@@ -153,7 +154,7 @@ body {
 
       /*HEAD INFO RIGHT BLOCK AND LEFT BLOCK - HEADER , TEXT - AND IMAGE*/
   .head-info {
-    overflow: auto;
+ 
   }
 
 .header-rightcol {
