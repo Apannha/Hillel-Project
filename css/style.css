@@ -2,9 +2,7 @@
   outline:1px solid green !important;
 }  */
 
-* , *::after, *::before {
-  outline: 1px solid red;
-}
+
 
 .clearfix {
   clear: both;
@@ -41,7 +39,6 @@
   width: 100%;
   max-width: 1200px;
   margin: auto;
-
   font-family: "Poppins", sans-serif;
 }
 
@@ -657,17 +654,6 @@ hr {
   padding-top: 32px;
 }
 
-.card-collection:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.cards-container::after{
-  content: "";
-  display: block;
-  overflow: auto;
-  clear: both;
-}
 
 .cards-container2 {
   width: 384px;
@@ -2166,7 +2152,7 @@ padding-bottom: 30px;
   padding-right: 25px;
 }
 .hr-clear {
-  width: 1200px;
+  max-width: 1200px;
 }
 .form-social {
   margin-bottom: 30px;
