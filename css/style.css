@@ -131,11 +131,8 @@ body {
    color: #bdcadbd7;
    border-bottom: 2px solid white;
    
- 
   }
-  .header-menu li:hover{
- 
-  }
+
 
   /* a {
     transition: background-color 0.3s; 
@@ -148,9 +145,6 @@ body {
     transition: transform 0.3s;
     color: #bdcadbd7;
   }
-  .header-menu a:hover {
-  
-}
 
 
   .header-button {
