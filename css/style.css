@@ -1,5 +1,7 @@
 /* *  {
-  outline:1px solid green !important;}  */
+  outline:1px solid green !important;
+}  */
+
 
 
 .clearfix {
@@ -30,14 +32,13 @@
   background-position: center center; /* Add this line */
   background-attachment: fixed;
   width: 100%;
-  height: 540px;
+  height: 80vh;
 }
 
 .container {
   width: 100%;
   max-width: 1200px;
   margin: auto;
-
   font-family: "Poppins", sans-serif;
 }
 
@@ -53,19 +54,18 @@
     content: '';
     display: block;
     clear: both;
-    overflow: auto;
+
   }
 body {
     background-color: #eef1ff;
     width: 100%;
-    min-width: 1200px;
 
   }
   /* HEAD INFORMATION BLOCK*/
   
   .header {
     padding: 24px 0px;
-    overflow: auto;
+
   }
 
   .header-logo img {
@@ -74,11 +74,11 @@ body {
 
   .header-menu {
     margin-left: 232px;
-    overflow: hidden;
+
   }
 
   .header-menu ul {
-    overflow: hidden;
+
   }
 
   .header-menu li {
@@ -130,7 +130,7 @@ body {
     background-color: transparent;
     border: 2px solid #BDCADB;
     border-radius: 12px;
-    overflow: hidden;
+
     align-items: center;
     font-family: Poppins;
     font-weight: 500;
@@ -153,18 +153,16 @@ body {
   /* END OF HEAD INFORMATION BLOCK */
 
       /*HEAD INFO RIGHT BLOCK AND LEFT BLOCK - HEADER , TEXT - AND IMAGE*/
-  .head-info {
- 
-  }
+
 
 .header-rightcol {
   width: 655px;
   height: 592px;
-  overflow: hidden;
+
 }
   
 .header_leftcol {
-  overflow: hidden;
+
 }
 .header-leftcol {
   padding-top: 78px;
@@ -265,12 +263,12 @@ body {
 
 main {
   clear: both;
-  overflow: hidden;
+
 }
 
 .section1_info {
   clear: both;
-  overflow: hidden;
+
   padding-bottom: 32px;
 }
 /*END OF EDITING HEADER BLOCK */
@@ -311,11 +309,11 @@ main {
 
 
 .hot-actions {
-  overflow: hidden;
+ 
   clear: both;
 }
 .left-info {
-  overflow: hidden;
+
 }
 
 .left-info h2 {
@@ -396,7 +394,7 @@ select::-ms-expand {
   border-radius: 16px;
   padding: 16px;
   background-color: white;
-  overflow: hidden;
+
   margin: 0px 21px 0px 0px;
 }
 .card-bid1:hover {
@@ -456,13 +454,13 @@ select::-ms-expand {
 }
 
 .hot-middle-card {
-  overflow: hidden;
+
   padding-top: 12px;
   padding-bottom: 7px;
 }
 
 .hot-bottom-card {
-  overflow: hidden;
+
   clear: both;
 
 }
@@ -477,7 +475,7 @@ select::-ms-expand {
 }
 
 .hot-bottom-card figure {
-  overflow: hidden;
+
 }
 
 .hot-artist-name {
@@ -603,8 +601,8 @@ hr {
 }
  .select-data-links li {
   display: inline-block;
-  overflow: hidden;
  }
+
  .select-data-links ul{
   padding: 6px;
  }
@@ -656,17 +654,6 @@ hr {
   padding-top: 32px;
 }
 
-.card-collection:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.cards-container::after{
-  content: "";
-  display: block;
-  overflow: auto;
-  clear: both;
-}
 
 .cards-container2 {
   width: 384px;
@@ -2165,7 +2152,7 @@ padding-bottom: 30px;
   padding-right: 25px;
 }
 .hr-clear {
-  width: 1200px;
+  max-width: 1200px;
 }
 .form-social {
   margin-bottom: 30px;
