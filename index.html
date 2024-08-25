@@ -41,44 +41,67 @@
     <header>
     <div class="head-banner">
         <div class="container">
-            <div class="header banner">
-                <a href="./html.html" class="header-logo fl">
+               <div class="header-menu-info">
+                <a href="#connect" class="header-logo fl">
                     <img src="./images/icons/Logo.svg" alt="NFT Logo">
                 </a>
-                <nav class="header-menu fl">
-                    <ul>
-                        <li><a href="#" aria-current="page">Home</a></li>
-                        <li><a href="#">Market Place</a></li>
-                        <li><a href="#">All NFTs</a></li>
-                        <li><a href="#">Activities</a></li>
-                        <li><a href="#"><img width="20" src="./images/icons/dots.svg" alt="Dots"></a></li>
-                        <li><a href="#"><img width="20" src="./images/icons/search.svg" alt="Search"></a></li>
-                    </ul>
-                </nav>
-                <button class="header-button fr">Connect wallet</button>
-            </div>
+                <button class="header-button border-image-source fr">Connect wallet</button>
+                <div class="fr">
+                    <nav class="header-menu">
+                        <ul>
+                            <li><a href="#" aria-current="page">Home</a></li>
+                            <li><a href="#hot-auctions">Market Place</a></li>
+                            <li><a href="#connect" >All NFTs</a></li>
+                            <li><a href="#">Activities</a></li>
+                            <li><a href="#"><img src="./images/icons/dots.svg" alt="Dots"></a></li>
+                            <li><a href="#"><img width="24" src="./images/icons/search.svg" alt="Search"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+               </div>
             <div class="head-info">
                 <div class="header-leftcol fl" ><!-- HEADER INFO LEFT COLUMN-->
-                    <h1>Discover, collect, and <br>
+                    <h1 class="header-leftcol_title">Discover, collect, and <br>
                     sell extraordinary NFTs</h1>
-                    <p>
+                    <p class="header-leftcol_text">
                         Amet minim mollit non deserunt ullamco est sit aliqua dolor do<br> amet sint. Velit officia consequat duis enim velit mollit. Exercitation<br> veniam consequat sunt nostrud amet.
                     </p>
                     <button type="button" class="explore-btn fl"><span class="exp-text fl">Explore now</span><img class="exp-btn-img exp-btn-box fr" src="./images/icons/arrow-right.svg" alt="Arrow Right"></button>
-                </div>
-                <div class="header-rightcol fr ">
-                    <img src="./images/icons/Illuimg.svg" alt="Illum Image" title="Illum Image">
-                </div>
+               
+                    <!-- <img draggable="false" class="illum-card" src="./images/Header_img/Right_Column/Card.png" alt="">
+                    <img draggable="false" class="illum-card_icon3" src="./images/Header_img/Right_Column/icon3.png" alt="">
+                    <img draggable="false" class="illum-card_icon2" src="./images/Header_img/Right_Column/icon2.png" alt="">
+                    <img draggable="false" class="illum-card_icon1" src="./images/Header_img/Right_Column/icon1.png" alt="">
+                    <img draggable="false" class="illum-card_thick" src="./images/Header_img/Right_Column/thick.png" alt="">
+                   
+                        <img draggable="false" class="illum-card_surface" src="./images/Header_img/Right_Column/surface.png" alt="">
+                        <p class="illum-card_text">Collection name</p>
+                        <h3 class="illum-card_title">NFT name Ex Shiba Astronaut</h3>
+                
+                </div> -->
+                <!-- <div class="illum-image fr">
+                    <img draggable="false" class="illum-card" src="./images/Header_img/Right_Column/Card.png" alt="">
+                    <img draggable="false" class="illum-card_icon3" src="./images/Header_img/Right_Column/icon3.png" alt="">
+                    <img draggable="false" class="illum-card_icon2" src="./images/Header_img/Right_Column/icon2.png" alt="">
+                    <img draggable="false" class="illum-card_icon1" src="./images/Header_img/Right_Column/icon1.png" alt="">
+                    <img draggable="false" class="illum-card_thick" src="./images/Header_img/Right_Column/thick.png" alt="">
+
+               </div> -->
+                
+            </div>
+            <div class="header-rightcol fr">
+                <!-- <img src="./images/Header_img/Right_Column/Thick.png" alt="Illum Image" title="Illum Image">
+                <img src="./images/Header_img/Right_Column/NFT01.svg" alt="Illum Image" title="Illum Image"> -->
+                <img src="./images/Header_img/Right_Column/illu_img.svg" alt="">
             </div>
         </div>
     </div>
     </header>
     <!-- MAIN INFORMATION-->
     <main class="container-main">
-
         <section class="block1-menu"> 
 <!-- DROP DOWN SELECTION LIST-->
-            <article class="section1_info">
+            <article class="section1_info" id="hot-auctions">
                 <div class="left-info fl">
                     <h2 class="fl">Hot Auctions</h2>
                     <div class="drop-list-btn fl">
@@ -99,10 +122,8 @@
                         <a href="#"><img src="./images/icons/next.svg" alt="Arrow forward"></a> <!-- ARROW FORWARD ICON BLOCK1-->
                     </div>
                 </div>
-            </article>
-        </section>
-<!-- FIRST CARD GROUP (1)-->
-        <section class="cards-container fl">
+                <!-- FIRST CARD GROUP (1)-->
+        <section class="cards-container fl clearfix">
             <article class="card-bid1 fl">
                 <figure>
                     <a href="#"><img src="./images/row1_cards/row1_card1.svg" alt="Card Image1" title="Phone dropped down" width="252"></a>
@@ -235,9 +256,11 @@
     </div>
 </article>
         </section>
+            </article>
+        </section>
 <!-- END OF CARDS GROUP  HOT ACTIONS-->
 <!-- CARD (1) POPULAR COLLECTION BLOCK-->
-        <section class="card-collection">
+        <section class="card-collection clearfix">
             <div class="popular-collections ">
                 <h2 class="popular-coll-title fl">Poppular Collections</h2>
                 <div class="drop-list-btn fl">
@@ -269,7 +292,7 @@
                     </div>
                 </div>
             </div>
-<!-- CARD (1 POPULAR COLLECTION BLOCK)-->            
+            <!-- CARD (1 POPULAR COLLECTION BLOCK)-->            
             <article class="cards-container2 fl">
                 <div class="cards-position fl">
                     <a href="#"><img class="card-coll-img1 fl" src="./images/popular-collections/article1/rect1.svg" alt="Animated wall purple wing"></a>
@@ -288,7 +311,7 @@
                     </div>
                 </div>
             </article>
-<!-- CARD (2 POPULAR COLLECTION BLOCK)-->
+            <!-- CARD (2 POPULAR COLLECTION BLOCK)-->
             <article class="cards-container2 fl">
                 <div class="cards-position fl">
                     <a href="#"><img class="card-coll-img1 fl" src="./images/popular-collections/article2/rect1.svg" alt="Animated wall purple wing"></a>
@@ -307,7 +330,7 @@
                     </div>
                 </div>
             </article>
-<!-- CARD (3) POPULAR COLLECTION BLOCK-->
+            <!-- CARD (3) POPULAR COLLECTION BLOCK-->
             <article class="cards-container2 fl">
                 <div class="cards-position fl">
                     <a href="#"><img class="card-coll-img1 fl" src="./images/popular-collections/article3/rect1.svg" alt="Animated wall purple wing"></a>
@@ -329,7 +352,7 @@
         </section>    
     <!-- TOP ARTISTS CONTAINER BLOCK LINE -->  
      <!-- TOP ARTISTS ROW 1-->
-    <section class="top-artists-row1">
+    <section class="top-artists-row1 clearfix">
             <!-- ARTIST CARD (1)-->   
         <article class="artists-items">
             <h2 class="fl">Top Artists</h2>
@@ -395,55 +418,56 @@
                     </div>
                 </div>
             </article>
+            <section class="top-artists-row2">
+                <!-- ARTIST CARD (4)-->   
+             <article class="artist-card4 fl">
+                 <h3 class="fl">4</h3>
+                 <a class="fl" href="#"><img  src="./images/top-artists/ava.svg" alt="Beautiful Ava"></a>
+                 <div class="artist-info4 fl">
+                     <h3 class="fl">Phuong Pham</h3>
+                     <a href="#"><img src="./images/top-artists/viewed.svg" alt="Followers"></a>
+                     <a href="#"><img src="./images/top-artists/viewed2.svg" alt="Followers"></a>
+                     <div class="artist-info4-4">
+                         <img class="" src="./images/top-artists/eth.svg" alt="Diamond">
+                         <p class="fl">2,798</p>
+                         <p class="fr">Follow by mikain and<br> 2,129 users</p>
+                     </div>
+                 </div>
+             </article>
+                 <!-- ARTIST CARD (5)-->   
+                 <article class="artist-card5 fl">
+                     <h3 class="fl">5</h3>
+                     <a class="fl" href="#"><img  src="./images/top-artists/ava.svg" alt="Beautiful Ava"></a>
+                     <div class="artist-info5 fl">
+                         <h3 class="fl">Phuong Pham</h3>
+                         <a href="#"><img src="./images/top-artists/viewed.svg" alt="Followers"></a>
+                         <a href="#"><img src="./images/top-artists/viewed2.svg" alt="Followers"></a>
+                         <div class="artist-info5-5">
+                             <img class="" src="./images/top-artists/eth.svg" alt="Diamond">
+                             <p class="fl">2,798</p>
+                             <p class="fr">Follow by mikain and<br> 2,129 users</p>
+                         </div>
+                     </div>
+                 </article>
+                   <!-- ARTIST CARD (6)-->   
+                   <article class="artist-card6">
+                     <h3 class="fl">6</h3>
+                     <a class="fl" href="#"><img  src="./images/top-artists/ava.svg" alt="Beautiful Ava"></a>
+                     <div class="artist-info6 fl">
+                         <h3 class="fl">Phuong Pham</h3>
+                         <a href="#"><img src="./images/top-artists/viewed.svg" alt="Followers"></a>
+                         <a href="#"><img src="./images/top-artists/viewed2.svg" alt="Followers"></a>
+                         <div class="artist-info6-6">
+                             <img class="" src="./images/top-artists/eth.svg" alt="Diamond">
+                             <p class="fl">2,798</p>
+                             <p class="fr">Follow by mikain and<br> 2,129 users</p>
+                         </div>
+                     </div>
+                 </article>
+         </section> 
     </section> 
     <!-- TOP ARTISTS ROW (2)-->
-    <section class="top-artists-row2">
-           <!-- ARTIST CARD (4)-->   
-        <article class="artist-card4 fl">
-            <h3 class="fl">4</h3>
-            <a class="fl" href="#"><img  src="./images/top-artists/ava.svg" alt="Beautiful Ava"></a>
-            <div class="artist-info4 fl">
-                <h3 class="fl">Phuong Pham</h3>
-                <a href="#"><img src="./images/top-artists/viewed.svg" alt="Followers"></a>
-                <a href="#"><img src="./images/top-artists/viewed2.svg" alt="Followers"></a>
-                <div class="artist-info4-4">
-                    <img class="" src="./images/top-artists/eth.svg" alt="Diamond">
-                    <p class="fl">2,798</p>
-                    <p class="fr">Follow by mikain and<br> 2,129 users</p>
-                </div>
-            </div>
-        </article>
-            <!-- ARTIST CARD (5)-->   
-            <article class="artist-card5 fl">
-                <h3 class="fl">5</h3>
-                <a class="fl" href="#"><img  src="./images/top-artists/ava.svg" alt="Beautiful Ava"></a>
-                <div class="artist-info5 fl">
-                    <h3 class="fl">Phuong Pham</h3>
-                    <a href="#"><img src="./images/top-artists/viewed.svg" alt="Followers"></a>
-                    <a href="#"><img src="./images/top-artists/viewed2.svg" alt="Followers"></a>
-                    <div class="artist-info5-5">
-                        <img class="" src="./images/top-artists/eth.svg" alt="Diamond">
-                        <p class="fl">2,798</p>
-                        <p class="fr">Follow by mikain and<br> 2,129 users</p>
-                    </div>
-                </div>
-            </article>
-              <!-- ARTIST CARD (6)-->   
-              <article class="artist-card6">
-                <h3 class="fl">6</h3>
-                <a class="fl" href="#"><img  src="./images/top-artists/ava.svg" alt="Beautiful Ava"></a>
-                <div class="artist-info6 fl">
-                    <h3 class="fl">Phuong Pham</h3>
-                    <a href="#"><img src="./images/top-artists/viewed.svg" alt="Followers"></a>
-                    <a href="#"><img src="./images/top-artists/viewed2.svg" alt="Followers"></a>
-                    <div class="artist-info6-6">
-                        <img class="" src="./images/top-artists/eth.svg" alt="Diamond">
-                        <p class="fl">2,798</p>
-                        <p class="fr">Follow by mikain and<br> 2,129 users</p>
-                    </div>
-                </div>
-            </article>
-    </section> 
+    <!-- TRENDING NFTS - CONTAINER BLOCK-->
     <section class="trending-nfts">
         <div class="popular-collections ">
             <h2 class="popular-coll-title fl">Trendins NFTs</h2>
@@ -583,7 +607,7 @@
         </article>
     </section>   
     <!-- LIST YOUR ART ON MYNFT - CONTAINER BLOCK-->
-    <section class="list-your-art">
+    <section class="list-your-art" id="connect">
         <!-- LADY NFT IMAGE BLOCK-->
         <article class="list-art-item fl">
             <figure>
@@ -606,8 +630,12 @@
             <h3>List your art on MyNFT</h3>
             <p>Are you an artist or NFT project creator? Get in touch<br>
                 with us to get your content on Nifty Gateway!</p>
-                <button id="artist" type="button">I am an artist</button>
-               <a href="#"><img id="buyer" src="./images/list-your-art/button-l.svg" alt="Button"></a>
+               <div class="art-info_btn art-info_img clearfix">
+                <button id="artist" class="fl" type="button">I am an artist</button>
+                <div class="art-info_buyer fr">
+                    <a href="#"><img class="fr" id="buyer" src="./images/list-your-art/button-l.svg" alt="Button"></a>
+                </div>
+               </div>
         </article>
     </section>   
     <!-- BROWSE BY CATEGORY - BLOCK CONTAINER-->
@@ -623,25 +651,23 @@
         <article class="browse-item3 fl">
             <img src="./images/browse-by-category/item3.svg" alt="Illustrating image">
         </article>
-        <article class="browse-item4 fr">
+        <article class="browse-item4 fl">
             <img src="./images/browse-by-category/item4.svg" alt="Illustrating image">
         </article>
-    </section>  
         <!-- BROWSE BY CATEGORY - CARD ROW (2)-->
-    <section class="browse-category2">
-        <article class="browse-item1 fl">
-            <img src="./images/browse-by-category/item5.svg" alt="Illustrating image">
+        <article class="browse-item1 fl pb">
+            <img src="./images/browse-by-category/item1.svg" alt="Illustrating image">
         </article>
-        <article class="browse-item2 fl">
-            <img src="./images/browse-by-category/item6.svg" alt="Illustrating image">
+        <article class="browse-item2 fl pb">
+            <img src="./images/browse-by-category/item2.svg" alt="Illustrating image">
         </article>
-        <article class="browse-item3 fl">
-            <img src="./images/browse-by-category/item7.svg" alt="Illustrating image">
+        <article class="browse-item3 fl pb">
+            <img src="./images/browse-by-category/item3.svg" alt="Illustrating image">
         </article>
-        <article class="browse-item4 fr">
-            <img src="./images/browse-by-category/item8.svg" alt="Illustrating image">
-        </article>
-    </section> 
+        <article class="browse-item4 fr pb">
+            <img src="./images/browse-by-category/item4.svg" alt="Illustrating image">
+        </article> 
+    </section>  
     <!-- THE PREMIER MARKET PLACE FOR NFTS - CONTAINER BLOCK--> 
      <section class="premier-marketplace">
         <!-- PREMIER LEFT BLOCK-->
@@ -762,7 +788,7 @@
                 </nav>
         </article>
         <!-- SUBSCRIBE BUTTON - SEND E-MAIL FORM-->
-        <article class="form-wrapper fl">
+        <article class="form-wrapper fr">
             <h3 class="form-title">Get our lastest updates</h3>
             <form class="send-form fl" action="/" method="post" id="send-subscribe" autocomplete="on">
                 <label >
@@ -785,7 +811,6 @@
         </article>
         <hr class="hr-clear clearfix">
     </section>
-    
 </footer>
 </body>
 </html>
