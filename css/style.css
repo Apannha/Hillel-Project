@@ -764,8 +764,6 @@ hr {
   margin: 0;
 }
 .cards-container2 {
-  width: 384px;
-  gap: 12px;
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.6);
   margin-right: 24px;
@@ -779,6 +777,45 @@ hr {
   clear: both;
 }
 
+.cards-position {
+  clear: both;
+  overflow: auto;
+}
+
+.right-img_slot a:first-of-type {
+  display: block;
+  overflow: auto;
+}
+.right-img_slot a:nth-child(2){
+  display: inline-block;
+  /*max-width: 76px;*/
+}
+.right-img_slot a:nth-child(3){
+  display: inline-block;
+  /*max-width: 76px;*/
+}
+.card-coll-img3 {
+  padding-left: 8px;
+}
+.card-coll-img4 {
+  padding-left: 4px;
+}
+.cards-position img {
+  display: inline-block;
+  overflow: auto;
+  /* max-width: 76px; */
+}
+.cards-container:after  {
+  display: block;
+  clear: both;
+  overflow: auto;
+}
+.card-coll-img2 {
+  padding: 16px 16px 8px 8px;
+}
+.card-coll-image4 {
+  display: block;
+}
 .cards-position .card-coll-img1 {
   padding: 16px 0px 16px 16px;
 }
@@ -788,19 +825,17 @@ hr {
   transition: 0.2s;
 }
 
-.cards-position .card-coll-img2 {
-  padding: 15px 8px 8px 8px;
-}
+
 
 .cards-position .card-coll-img2:hover {
   transform: scale(0.97);
   transition: 0.2s;
 }
 
-.cards-position .card-coll-img3 {
-  padding: 0px 8px 12px 8px ;
+.card-coll-imag3 {
+  padding: 0 0 0 8px;
+  display: block;
 }
-
 .cards-position .card-coll-img3:hover {
   transform: scale(0.96);
   transition: 0.2s;
@@ -812,15 +847,14 @@ hr {
 }
 
 
+
 .block1-cards-info h3 {
     font-size: 16px;
     list-style: 24px;
     font-weight: 600;
 
 }
-.block1-cards-info {
-  padding-bottom: 16px;
-}
+
 .block1-cards-info p {
   font-size: 12px;
   line-height: 16px;
@@ -842,14 +876,15 @@ hr {
   color: rgba(157, 155, 185, 1);
   text-align: right;
 }
-.bottom-card-position {
-  padding: 0px 16px 16px 16px;
-}
-.cards-container:after  {
-  display: block;
-  clear: both;
+.bottom-card_block {
   overflow: auto;
 }
+.bottom-card-position {
+  clear: both;
+  overflow: auto;
+  padding: 0 16px 16px 16px;
+}
+
 
 /* TOP ARTISTS BLOCK CONTAINER INFO*/
 .top-artists-row1 {
