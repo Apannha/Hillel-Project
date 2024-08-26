@@ -495,8 +495,9 @@ select::-ms-expand {
 }
 
 .card-bid-title {
-  padding-top: 16px;
+  padding: 16px 0 12px 0;
 }
+
 
 .card-bid1 {
   border-radius: 16px;
@@ -518,7 +519,7 @@ select::-ms-expand {
   font-size: 18px;
   line-height: 24px;
 
-  font-weight: 600;
+  font-weight: 500;
   color: #21204A;
 }
 
@@ -550,32 +551,42 @@ select::-ms-expand {
   font-size: 16px;
   line-height: 24px;
 
-  font-weight: 600;
+  font-weight: 500;
   color: #21204A;
 }
 
 .hot-subtitle2 h3 {
   font-size: 16px;
   line-height: 24px;
-
-  font-weight: 600;
+  font-weight: 500;
   color: #21204A;
 }
 
 
 .hot-bottom-card {
-
+  overflow: auto;
   clear: both;
+  padding-top: 12px;
 
 }
+.bottom-card_right a {
+  display: inline-block;
+}
+.bottom-card_left a {
+  display: inline-block;
+}
 .hot-bottom-card figcaption{
-  padding: 5px;
+  padding: 4px 0 4px 9px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   align-items: center;
   color: rgba(157, 155, 185, 1);
+}
+
+.bottom-card_right img a {
+  display: inline-block;
 }
 
 
@@ -673,8 +684,6 @@ hr {
  }
 
  .select-data {
-  width: 285px;
-  height: 44px;
   border-radius: 12px;
   background-color: rgba(205, 226, 254, 1);
   font-size: 16px;
@@ -751,12 +760,13 @@ hr {
 /*END OF POPULAR COLLECTIONS BLOCK MENU EDITING*/
   /*CARD SLOTS FOR POPULAR COLLECTIONS  */ 
 
-
+.cards-container article hr {
+  margin: 0;
+}
 .cards-container2 {
   width: 384px;
   gap: 12px;
   border-radius: 12px;
-  opacity: 0px;
   background-color: rgba(255, 255, 255, 0.6);
   margin-right: 24px;
 }
@@ -1281,6 +1291,11 @@ hr {
 }
 .trending-nft-card1 {
   cursor: pointer;
+}
+.hot-middle-card {
+  clear: both;
+  overflow: auto;
+  padding-bottom: 12px;
 }
 .hot-middle-card .clock {
   padding: 2px;
